@@ -1,5 +1,5 @@
 /*
-* Copyright (c) 2021 PlayEveryWare
+* Copyright (c) 2021-2024 PlayEveryWare, Inc. PlayEveryWare
 * 
 * Permission is hereby granted, free of charge, to any person obtaining a copy
 * of this software and associated documentation files (the "Software"), to deal
@@ -24,6 +24,7 @@ using System.Collections.Generic;
 
 namespace PlayEveryWare.EpicOnlineServices
 {
+// I'm making a small change here to this comment - and I want to see if it will automatically update the copyright year for me.
     public interface IEmpty
     {
         bool IsEmpty();
