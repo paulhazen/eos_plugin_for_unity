@@ -27,6 +27,11 @@ jobs:
         run: |
           python ./tools/scripts/copyright_update.py "${{ env.CHANGED_FILES }}"
 
+      - name: Configure Git
+        run: |
+          git config --global user.name "copyright-bot"
+          git config --global user.email "copyright-bot@users.noreply.github.com"
+          
       - name: Add & Commit Changes
         run: |
           git add -A
