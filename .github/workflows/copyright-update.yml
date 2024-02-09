@@ -34,8 +34,8 @@ jobs:
 
       - name: Add & Commit Changes
         run: |
-          git add . 
-          git commit -m "Automatically update copyright notices."
+          git add -A
+          git diff --staged --quiet || git commit -m "Automatically update copyright notices"
           
       - name: Push changes
         run: |
