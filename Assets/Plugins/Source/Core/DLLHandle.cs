@@ -1,5 +1,5 @@
 /*
-* Copyright (c) 2021 PlayEveryWare
+* Copyright (c) 2021-2024 PlayEveryWare, Inc. PlayEveryWare
 * 
 * Permission is hereby granted, free of charge, to any person obtaining a copy
 * of this software and associated documentation files (the "Software"), to deal
@@ -37,7 +37,7 @@ using PlayEveryWare.EpicOnlineServices;
 public class DLLHandle : SafeHandle
 {
     public override bool IsInvalid => handle == IntPtr.Zero;
-
+    // YAY! Here are some changes to test with.
     //-------------------------------------------------------------------------
     [Conditional("ENABLE_DLLHANDLE_PRINT")]
     private static void print(string toPrint)

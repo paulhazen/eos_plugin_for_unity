@@ -24,6 +24,7 @@ using System.Collections.Generic;
 
 namespace PlayEveryWare.EpicOnlineServices
 {
+// I'm making a small change here to this comment - and I want to see if it will automatically update the copyright year for me.
     public interface IEmpty
     {
         bool IsEmpty();
