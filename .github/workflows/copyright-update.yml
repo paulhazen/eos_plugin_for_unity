@@ -11,6 +11,7 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v4
         with:
+          persist-credentials: false
           fetch-depth: 0
 
       - name: Get list of changed files
@@ -35,4 +36,5 @@ jobs:
           git add -A # Stages all changes; adjust if needed to target specific files
           git diff --staged --quiet || git commit -m "Automatically update copyright notices"
           git push origin HEAD:${{ github.head_ref }}
-      
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
