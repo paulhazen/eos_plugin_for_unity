@@ -1,3 +1,25 @@
+"""
+Copyright (c) 2024 PlayEveryWare, Inc.
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+"""
+
 import sys
 import datetime
 import re
@@ -26,7 +48,7 @@ def update_copyright_notice(file_path) -> bool:
     Given a file, scans each line to find a copyright notice, and updates the year.
     """
     current_year = datetime.datetime.now().year
-    pattern = re.compile(r'\(c\) (\d{4})(|-\d{4})?')# PlayEveryWare,\ Inc\.')
+    pattern = re.compile(r'\(c\) (\d{4})(|-\d{4})? PlayEveryWare.+')
     
     # Read the original content of the file
     try:
@@ -38,7 +60,6 @@ def update_copyright_notice(file_path) -> bool:
     
     # Function to use in re.sub for replacement logic
     def replace_func(match) -> str:
-        print(f'Match is "{match}"')
         new_copyright = ""
         start_year = match.group(1)
         # If the copyright notice already has a range
@@ -51,8 +72,6 @@ def update_copyright_notice(file_path) -> bool:
             else:
                 # Update the year to a range from the original year to the current year
                 new_copyright = f"(c) {start_year}-{current_year} PlayEveryWare, Inc."
-        
-        print(new_copyright)
         
         return new_copyright
     
@@ -93,10 +112,13 @@ def main(changed_files):
         if update_copyright_notice(f):
             print(f'File "{f}" had it\'s copyright updated.')
     
-    
-    
-    
-    
 if __name__ == "__main__":
+    """
+    This Python script expects a new-line delimited list of filepaths, optionally
+    filepaths can be enclosed in quotes. This script does NOT try to determine if
+    the file was changed - it is expected that all files passed to this script
+    should have their copyright year or year range updated. The logic for that
+    component can be found in the GitHub workflow file that references this script.
+    """
     changed_files = sys.argv[1]
     main(changed_files)    
