@@ -28,16 +28,16 @@ jobs:
 
       - name: Configure Git
         run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
 
       - name: Add & Commit Changes
         run: |
-          git add -A # Stages all changes; adjust if needed to target specific files
-          git diff --staged --quiet || git commit -m "Automatically update copyright notices"
-
+          git add . 
+          git commit -m "Automatically update copyright notices."
+          
       - name: Push changes
         run: |
-          git push origin HEAD:${{ github.head_ref }}
+          git push
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
