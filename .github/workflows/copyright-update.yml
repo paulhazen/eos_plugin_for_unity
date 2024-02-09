@@ -41,5 +41,3 @@ jobs:
       - name: Push changes
         run: |
           git push origin HEAD:${{ github.head_ref }}
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
