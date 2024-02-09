@@ -9,8 +9,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
-        uses: actions/checkout@
+        uses: actions/checkout@v4
         with:
+          persist-credentials: true
+          token: ${{ secrets.PAT_TOKEN }}
           fetch-depth: 0
 
       - name: Get list of changed files
@@ -27,12 +29,14 @@ jobs:
 
       - name: Configure Git
         run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "github-actions[bot]@users.noreply.github.com"
-
-      - name: Commit and Push Changes
+          git config --global user.name "copyright-bot"
+          git config --global user.email "copyright-bot@users.noreply.github.com"
+          
+      - name: Add & Commit Changes
         run: |
-          git add -A # Stages all changes; adjust if needed to target specific files
-          git diff --staged --quiet || git commit -m "Automatically update copyright notices"
+          git add -A
+          git diff --staged --quiet || git commit -m "Automatically update copyright notices [skip ci]"
+          
+      - name: Push changes
+        run: |
           git push origin HEAD:${{ github.head_ref }}
-      

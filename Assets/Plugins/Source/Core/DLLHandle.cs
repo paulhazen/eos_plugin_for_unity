@@ -37,7 +37,7 @@ using PlayEveryWare.EpicOnlineServices;
 public class DLLHandle : SafeHandle
 {
     public override bool IsInvalid => handle == IntPtr.Zero;
-
+    // YAY! Here are some changes to test with.
     //-------------------------------------------------------------------------
     [Conditional("ENABLE_DLLHANDLE_PRINT")]
     private static void print(string toPrint)
