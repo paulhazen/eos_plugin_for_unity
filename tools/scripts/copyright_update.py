@@ -63,8 +63,6 @@ def update_copyright_notice(file_path) -> bool:
     if updated_content == content:
         print(f'Copyright either missing or up-to-date in file "{file_path}"')
         return False
-    else:
-        return True
     
     # Write the updated content back to the file
     try:
@@ -73,6 +71,9 @@ def update_copyright_notice(file_path) -> bool:
         print(f"Updated copyright notice in {file_path}")
     except IOError as e:
         print(f"Error writing to file: {file_path}. {e}")
+        return False
+    
+    return True
 
 def main(changed_files):
     # Split by newline and strip each entry of quotation marks
