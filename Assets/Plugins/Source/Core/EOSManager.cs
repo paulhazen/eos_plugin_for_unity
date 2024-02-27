@@ -1,5 +1,5 @@
 /*
-* Copyright (c) 2021-2024 PlayEveryWare, Inc., Inc.
+* Copyright (c) 2021 PlayEveryWare
 * 
 * Permission is hereby granted, free of charge, to any person obtaining a copy
 * of this software and associated documentation files (the "Software"), to deal
@@ -43,6 +43,7 @@
 // this is a sample change (testing it to see if it works)
 // this is ANOTHER change
 // YET ANOTHER change.
+// asdfasdfasdf
 // This change should not cause the copyright updater to update any files.
 // If using a 1.12 or newer, this allows the eos manager to use the new
 // bindings API to hook up and load the library
