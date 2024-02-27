@@ -1,5 +1,5 @@
 /*
-* Copyright (c) 2021 PlayEveryWare
+* Copyright (c) 2021-2024 PlayEveryWare, Inc.
 * 
 * Permission is hereby granted, free of charge, to any person obtaining a copy
 * of this software and associated documentation files (the "Software"), to deal
@@ -41,6 +41,9 @@
 
 //#define ENABLE_DEBUG_EOSMANAGER
 // this is a sample change (testing it to see if it works)
+// this is ANOTHER change
+// YET ANOTHER change.
+// This change should not cause the copyright updater to update any files.
 // If using a 1.12 or newer, this allows the eos manager to use the new
 // bindings API to hook up and load the library
 #if EOS_DYNAMIC_BINDINGS
