@@ -43,6 +43,7 @@
 // this is a sample change (testing it to see if it works)
 // this is ANOTHER change
 // YET ANOTHER change.
+// This change should not cause the copyright updater to update any files.
 // If using a 1.12 or newer, this allows the eos manager to use the new
 // bindings API to hook up and load the library
 #if EOS_DYNAMIC_BINDINGS
