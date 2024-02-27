@@ -47,9 +47,6 @@ def update_copyright_notice(file_path) -> bool:
     """
     Given a file, scans each line to find a copyright notice, and updates the year.
     """
-    current_year = datetime.datetime.now().year
-    pattern = re.compile(r'\(c\) (\d{4})(|-\d{4})? PlayEveryWare(|.+)')
-    
     # Read the original content of the file
     try:
         with open(file_path, 'r', encoding='utf-8') as file:
@@ -58,10 +55,13 @@ def update_copyright_notice(file_path) -> bool:
         print(f"Error opening or reading file: {file_path}. {e}")
         return
     
+    current_year = datetime.datetime.now().year
+    
     # Function to use in re.sub for replacement logic
     def replace_func(match) -> str:
         new_copyright = ""
         start_year = match.group(1)
+        print(f"Start year is {start_year}")
         # If the copyright notice already has a range
         if match.group(2):  
             new_copyright = f"(c) {start_year}-{current_year} PlayEveryWare, Inc."
@@ -74,6 +74,8 @@ def update_copyright_notice(file_path) -> bool:
                 new_copyright = f"(c) {start_year}-{current_year} PlayEveryWare, Inc."
         
         return new_copyright
+    
+    pattern = re.compile(r'\(c\) (\d{4})(|-\d{4})? PlayEveryWare.+')
     
     # Update the content
     updated_content = pattern.sub(replace_func, content)
