@@ -75,7 +75,7 @@ def update_copyright_notice(file_path) -> bool:
         
         return new_copyright
     
-    pattern = re.compile(r'\(c\) (\d{4})(|-\d{4})? PlayEveryWare.+')
+    pattern = re.compile(r'\(c\) (\d{4})(|-\d{4})? PlayEveryWare.*')
     
     # Update the content
     updated_content = pattern.sub(replace_func, content)
