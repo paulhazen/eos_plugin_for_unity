@@ -75,7 +75,7 @@ def update_copyright_notice(file_path) -> bool:
         
         return new_copyright
     
-    pattern = re.compile(r'\(c\) (\d{4})(|-\d{4})? PlayEveryWare.+')
+    pattern = re.compile(r'\(c\) (\d{4})(|-\d{4})? PlayEveryWare.*')
     
     # Update the content
     updated_content = pattern.sub(replace_func, content)
@@ -130,5 +130,5 @@ if __name__ == "__main__":
     should have their copyright year or year range updated. The logic for that
     component can be found in the GitHub workflow file that references this script.
     """
-    changed_files = sys.argv[1]
+    changed_files = "../../Assets/Plugins/Source/Core/EOSManager.cs" #sys.argv[1]
     main(changed_files)    
