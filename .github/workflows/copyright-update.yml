@@ -27,6 +27,7 @@ jobs:
       - name: Pass files to python script.
         run: |
           python ./tools/scripts/copyright_update.py "${{ env.CHANGED_FILES }}"
+        continue-on-error: false # This is to stop git from pushing if there are no changes
 
       - name: Configure Git
         run: |

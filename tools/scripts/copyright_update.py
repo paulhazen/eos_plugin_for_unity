@@ -108,9 +108,17 @@ def main(changed_files):
     files = filter_non_binary_files(files)
     
     print("\nNon-binary files:")
+    files_were_changed = False
+
     for f in files:
         if update_copyright_notice(f):
             print(f'File "{f}" had it\'s copyright updated.')
+            files_were_changed = True
+            
+    if files_were_changed:
+        sys.exit(0) # files were changed successfully
+    else:
+        sys.exit(1) # indicates that no files were altered
     
 if __name__ == "__main__":
     """
