@@ -130,5 +130,5 @@ if __name__ == "__main__":
     should have their copyright year or year range updated. The logic for that
     component can be found in the GitHub workflow file that references this script.
     """
-    changed_files = "../../Assets/Plugins/Source/Core/EOSManager.cs" #sys.argv[1]
+    changed_files = sys.argv[1]
     main(changed_files)    
