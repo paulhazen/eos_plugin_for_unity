@@ -40,7 +40,7 @@
 
 
 //#define ENABLE_DEBUG_EOSMANAGER
-// small change to test copyright updating workflow script
+// this is a sample change (testing it to see if it works)
 // If using a 1.12 or newer, this allows the eos manager to use the new
 // bindings API to hook up and load the library
 #if EOS_DYNAMIC_BINDINGS
