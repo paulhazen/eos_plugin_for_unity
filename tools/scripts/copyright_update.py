@@ -48,7 +48,7 @@ def update_copyright_notice(file_path) -> bool:
     Given a file, scans each line to find a copyright notice, and updates the year.
     """
     current_year = datetime.datetime.now().year
-    pattern = re.compile(r'\(c\) (\d{4})(|-\d{4})? PlayEveryWare.+')
+    pattern = re.compile(r'\(c\) (\d{4})(|-\d{4})? PlayEveryWare(|.+)')
     
     # Read the original content of the file
     try:
