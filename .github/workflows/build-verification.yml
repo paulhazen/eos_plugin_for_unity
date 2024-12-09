@@ -1,0 +1,44 @@
+name: Unity Script-Only Compilation for Windows
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  script_compilation:
+    runs-on: ubuntu-latest # Use 'windows-latest' if required for other steps but Unity can cross-compile.
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v3
+
+    - name: Set up Unity
+      uses: game-ci/unity-setup@v2
+      with:
+        unityVersion: '2021.3.16f1' # Adjust to your project's Unity version
+        activationMode: 'manual'
+
+    - name: Perform Script-Only Compilation for Windows
+      run: |
+        /opt/unity/Editor/Unity \
+          -batchmode \
+          -nographics \
+          -silent-crashes \
+          -projectPath "$(pwd)" \
+          -logFile /dev/stdout \
+          -warnaserror \
+          -buildTarget StandaloneWindows64 \
+          -quit
+      env:
+        UNITY_LICENSE: ${{ secrets.UNITY_LICENSE }}
+
+    - name: Check for Compilation Warnings and Errors
+      run: |
+        if grep -qE "error|warning" /dev/stdout; then
+          echo "Compilation failed with errors or warnings."
+          exit 1
+        fi
