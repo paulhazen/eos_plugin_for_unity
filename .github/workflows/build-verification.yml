@@ -4,39 +4,32 @@ on:
   workflow_dispatch:
 
 jobs:
-  script_compilation:
-    runs-on: ubuntu-latest # Use 'windows-latest' if required for other steps but Unity can cross-compile.
-
+  buildForLinuxBasedPlatforms:
+    name: Build for ${{ matrix.targetPlatform }}
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: true
+      matrix:
+        unityVersion:
+          - 2021.3.16f1 # Expand this to other versions as needed
+        targetPlatform: # These are the platforms for which linux can build to.
+          - StandaloneLinux64
+          - iOS
+          - Android
+          
     steps:
-    - name: Checkout repository
-      uses: actions/checkout@v3
-
-    - name: Set up Unity
-      uses: game-ci/unity-builder@v4
-      env:
-        UNITY_SERIAL: ${{ secrets.UNITY_SERIAL }}
-        UNITY_EMAIL: ${{ secrets.UNITY_EMAIL }}
-        UNITY_PASSWORD: ${{ secrets.UNITY_PASSWORD }}
-      with:
-        unityVersion: '2021.3.16f1' # Adjust to your project's Unity version
-
-    - name: Perform Script-Only Compilation for Windows
-      run: |
-        /opt/unity/Editor/Unity \
-          -batchmode \
-          -nographics \
-          -silent-crashes \
-          -projectPath "$(pwd)" \
-          -logFile /dev/stdout \
-          -warnaserror \
-          -buildTarget StandaloneWindows64 \
-          -quit
-      env:
-        UNITY_LICENSE: ${{ secrets.UNITY_LICENSE }}
-
-    - name: Check for Compilation Warnings and Errors
-      run: |
-        if grep -qE "error|warning" /dev/stdout; then
-          echo "Compilation failed with errors or warnings."
-          exit 1
-        fi
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          lfs: true
+      - uses: game-ci/unity-builder@v4
+        env:
+          UNITY_SERIAL: ${{ secrets.UNITY_SERIAL }}
+          UNITY_EMAIL: ${{ secrets.UNITY_EMAIL }}
+          UNITY_PASSWORD: ${{ secrets.UNITY_PASSWORD }}
+        with:
+          unityVersion: ${{ matrix.unityVersion }}
+      - uses: actions/upload-artifact@v3
+        with:
+          name: Build
+          path: build
