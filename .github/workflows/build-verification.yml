@@ -1,4 +1,4 @@
-name: Unity Script-Only Compilation for Windows
+name: Script-Only Compilation
 
 on:
   workflow_dispatch:
@@ -12,10 +12,13 @@ jobs:
       uses: actions/checkout@v3
 
     - name: Set up Unity
-      uses: game-ci/unity-setup@v2
+      uses: game-ci/unity-builder@v4
+      env:
+        UNITY_LICENSE: ${{ secrets.UNITY_LICENSE }}
+        UNITY_EMAIL: ${{ secrets.UNITY_EMAIL }}
+        UNITY_PASSWORD: ${{ secrets.UNITY_PASSWORD }}
       with:
         unityVersion: '2021.3.16f1' # Adjust to your project's Unity version
-        activationMode: 'manual'
 
     - name: Perform Script-Only Compilation for Windows
       run: |
