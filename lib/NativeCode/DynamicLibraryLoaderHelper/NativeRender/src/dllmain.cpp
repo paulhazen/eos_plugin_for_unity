@@ -30,17 +30,22 @@
 #include <string>
 #include "config_legacy.h"
 #include "logging.h"
-#include <eos_library_helpers.h>
-#include <eos_helpers.h>
+#include "eos_library_helpers.h"
+#include "eos_helpers.h"
 #include "io_helpers.h"
-#include "Config/SteamConfig.hpp"
-#include "Config/WindowsConfig.hpp"
+#include "include/Config/EOSWrapper.h"
+#include "include/Config/WindowsConfig.hpp"
+#include "include/Config/SteamConfig.hpp"
 
 using namespace pew::eos;
 using namespace pew::eos::eos_library_helpers;
 
 using FSig_ApplicationWillShutdown = void (__stdcall *)(void);
 FSig_ApplicationWillShutdown FuncApplicationWillShutdown = nullptr;
+
+#ifndef USE_LEGACY
+std::unique_ptr<EOSWrapper> eos_sdk;
+#endif
 
 /**
  * \brief Applies any command line arguments that may have been provided.
@@ -113,8 +118,23 @@ PEW_EOS_API_FUNC(void) UnityPluginLoad(void* arg)
     logging::global_log_open("gfx_log.txt");
 #endif
 
+    
+#ifdef USE_LEGACY
     std::filesystem::path DllPath;
     logging::log_inform("On UnityPluginLoad");
+
+    // Load EOSConfig
+    config_legacy::EOSConfig eos_config;
+    if (!config_legacy::try_get_eos_config(eos_config))
+    {
+        logging::log_error("Could not load EOSConfig.");
+    }
+    else
+    {
+        logging::log_inform("Loaded EOSConfig.");
+    }
+
+    get_cli_arguments(eos_config);
 
     // Acquire pointer to EOS SDK library
     s_eos_sdk_lib_handle = load_library_at_path(io_helpers::get_path_relative_to_current_module(SDK_DLL_NAME));
@@ -155,6 +175,12 @@ PEW_EOS_API_FUNC(void) UnityPluginLoad(void* arg)
     {
         logging::log_warn("Couldn't find dll "  SDK_DLL_NAME);
     }
+#else
+    // Make a pointer to the eos sdk
+    eos_sdk = std::make_unique<EOSWrapper>();
+    // Create the platform interface
+    eos_platform_handle = eos_sdk->start_eos();
+#endif
 }
 
 //-------------------------------------------------------------------------
@@ -167,8 +193,14 @@ PEW_EOS_API_FUNC(void) UnityPluginUnload()
     {
         FuncApplicationWillShutdown();
     }
+
+#ifdef USE_LEGACY
     unload_library(s_eos_sdk_overlay_lib_handle);
     s_eos_sdk_overlay_lib_handle = nullptr;
-
+#else
+    // Destroy the pointer to the platform that was created
+    eos_platform_handle = nullptr;
+    // No need to do anything to eos_sdk - it is automatically freed
+#endif
     logging::global_log_close();
 }

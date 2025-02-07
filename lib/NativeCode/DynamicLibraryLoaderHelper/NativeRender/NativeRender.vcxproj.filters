@@ -9,9 +9,11 @@
       <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
       <Extensions>h;hh;hpp;hxx;hm;inl;inc;ipp;xsd</Extensions>
     </Filter>
-    <Filter Include="Resource Files">
-      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
-      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    <Filter Include="Header Files\Config">
+      <UniqueIdentifier>{671bf193-3c16-4ad2-b7ac-71a64fa845a4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Config">
+      <UniqueIdentifier>{4daa6b3d-6965-47a2-88a1-b0cf6a8c928f}</UniqueIdentifier>
     </Filter>
     <Filter Include="Header Files\Config">
       <UniqueIdentifier>{5aafc329-e650-4bf8-97f2-29ba2d2229dd}</UniqueIdentifier>
@@ -46,11 +48,35 @@
     <ClInclude Include="include\logging.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="include\PEW_EOS_Defines.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
     <ClInclude Include="include\string_helpers.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="include\PEW_EOS_Defines.h">
-      <Filter>Header Files</Filter>
+    <ClInclude Include="include\Config\ClientCredentials.hpp">
+      <Filter>Header Files\Config</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Config\common.hpp">
+      <Filter>Header Files\Config</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Config\DLLWrapper.h">
+      <Filter>Header Files\Config</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Config\EOSWrapper.h">
+      <Filter>Header Files\Config</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Config\ProductionEnvironments.hpp">
+      <Filter>Header Files\Config</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Config\Serializable.hpp">
+      <Filter>Header Files\Config</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Config\SteamConfig.h">
+      <Filter>Header Files\Config</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Config\Version.hpp">
+      <Filter>Header Files\Config</Filter>
     </ClInclude>
     <ClInclude Include="include\Config\ClientCredentials.hpp">
       <Filter>Header Files\Config</Filter>
@@ -109,5 +135,17 @@
     <ClCompile Include="src\string_helpers.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="src\config_legacy.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Config\DLLWrapper.cpp">
+      <Filter>Source Files\Config</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Config\EOSWrapper.cpp">
+      <Filter>Source Files\Config</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
   </ItemGroup>
 </Project>

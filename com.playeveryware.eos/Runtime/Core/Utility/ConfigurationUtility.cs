@@ -1,4 +1,4 @@
-﻿/*
+/*
  * Copyright (c) 2024 PlayEveryWare
  *
  * Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -104,6 +104,7 @@ namespace PlayEveryWare.EpicOnlineServices.Utility
                 ClientSecret = platformConfig.clientCredentials.ClientSecret,
             };
 
+            // TODO: Make sure that it is acceptable not to inspect this external to unity
 #if !EXTERNAL_TO_UNITY
 
 #if !(UNITY_STANDALONE_WIN || UNITY_EDITOR_WIN || UNITY_STANDALONE_LINUX || UNITY_EDITOR_LINUX || UNITY_STANDALONE_OSX || UNITY_EDITOR_OSX)

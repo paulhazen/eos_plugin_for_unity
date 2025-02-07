@@ -32,11 +32,13 @@
 #include <codecvt>
 #include <eos_types.h>
 
+#include "include/Config/EOSWrapper.h"
+#include "include/PEW_EOS_Defines.h"
+#include "include/Config/PlatformConfig.hpp"
+#include "include/Config/ProductConfig.hpp"
 #include "../../../include/DLLHContext.h"
-#include "Config/PlatformConfig.hpp"
-#include "Config/ProductConfig.hpp"
-#include "Config/SteamConfig.hpp"
-#include "Config/WindowsConfig.hpp"
+#include "include/Config/SteamConfig.hpp"
+#include "include/Config/WindowsConfig.hpp"
 
 namespace pew::eos
 {
@@ -74,7 +76,7 @@ namespace pew::eos
 
         auto path_to_log_config_json = config_legacy::get_path_for_eos_service_config(EOS_LOGLEVEL_CONFIG_FILENAME);
 
-        if (!exists(path_to_log_config_json))
+        if (!std::filesystem::exists(path_to_log_config_json))
         {
             logging::log_inform("Log level config not found, using default log levels");
             return;

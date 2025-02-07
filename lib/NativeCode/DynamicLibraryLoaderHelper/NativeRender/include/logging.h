@@ -27,7 +27,7 @@
 #include <string>
 #include <eos_logging.h>
 
-#include "PEW_EOS_Defines.h"
+#include "include/PEW_EOS_Defines.h"
 
 /**
   * \brief Forward declarations
@@ -145,7 +145,7 @@ namespace pew::eos::logging
      *
      * @param log_string The warning message to log.
      */
-    void log_warn(const char* log_string);
+    PEW_EOS_API_FUNC(void) log_warn(const char* log_string);
 
     /**
      * @brief Logs a warning message.
@@ -167,7 +167,7 @@ namespace pew::eos::logging
      *
      * @param log_string The informational message to log.
      */
-    void log_inform(const char* log_string);
+    PEW_EOS_API_FUNC(void) log_inform(const char* log_string);
 
     /**
      * @brief Logs an informational message.
@@ -188,7 +188,7 @@ namespace pew::eos::logging
      *
      * @param log_string The error message to log.
      */
-    void log_error(const char* log_string);
+    PEW_EOS_API_FUNC(void) log_error(const char* log_string);
 
     /**
      * @brief Logs an error message.
