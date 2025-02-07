@@ -272,4 +272,3 @@ namespace pew::eos::config
 }
 
 #endif
-#pragma once

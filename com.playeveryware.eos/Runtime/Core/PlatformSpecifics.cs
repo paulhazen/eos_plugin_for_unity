@@ -98,7 +98,7 @@ namespace PlayEveryWare.EpicOnlineServices
             // this might be different on future platforms.
             return false;
         }
-
+        
         public virtual void ConfigureSystemPlatformCreateOptions(ref EOSCreateOptions createOptions)
         {
             ((EOSCreateOptions)createOptions).options.RTCOptions = new();
@@ -127,7 +127,7 @@ namespace PlayEveryWare.EpicOnlineServices
         {
         }
 
-        #endregion
+#endregion
     }
 }
 #endif //!EOS_DISABLE

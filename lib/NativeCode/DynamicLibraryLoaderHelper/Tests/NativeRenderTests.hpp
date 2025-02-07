@@ -1,6 +1,5 @@
-#ifndef CLIENT_CREDENTIALS_HPP
-#define CLIENT_CREDENTIALS_HPP
-
+#ifndef NATIVE_RENDER_TESTS_HPP
+#define NATIVE_RENDER_TESTS_HPP
 /*
  * Copyright (c) 2024 PlayEveryWare
  *
@@ -23,44 +22,24 @@
  * SOFTWARE.
  */
 
-#pragma once
+#include "pch.h"
+#include "eos_helpers.h"
 
-#include <string>
-
-#include "Serializable.hpp"
-
-namespace pew::eos::config
+namespace pew::eos::tests
 {
-    /**
-     * \brief Extends EOS_Platform_ClientCredentials to include the encryption
-     * key value.
-     */
-    struct ClientCredentials final : Serializable
+    TEST(NativeRender, NativeRenderGetPlatformInterfaceTest)
     {
-        std::string client_id;
-        std::string client_secret;
-        std::string encryption_key;
+        // Call the plugin load function.
+        UnityPluginLoad(nullptr);
 
-    protected:
-        void parse_json_element(const std::string& name, json_value_s& value) override
-        {
-            if (name == "Value")
-            {
-                from_json(value);
-            }
-            else if (name == "ClientId")
-            {
-                client_id = json_value_as_string(&value)->string;
-            }
-            else if (name == "ClientSecret")
-            {
-                client_secret = json_value_as_string(&value)->string;
-            }
-            else if (name == "EncryptionKey")
-            {
-                encryption_key = json_value_as_string(&value)->string;
-            }
-        }
-    };
+        // Try to get a handle to the EOS SDK Platform Interface.
+        const auto eos_platform_interface = EOS_GetPlatformInterface();
+
+        // Check to make certain that a non-null pointer was acquired.
+        EXPECT_TRUE(eos_platform_interface != nullptr) << "Could not get platform interface for EOS SDK.";
+
+        // Unload the plugin.
+        UnityPluginUnload();
+    }
 }
 #endif

@@ -121,14 +121,18 @@ copy "$(TargetDir)$(ProjectName)*" "$(OutputUnityAssetsDirectory)" /Y</Command>
   <!-- Source Files -->
   <ItemGroup>
     <ClInclude Include="include\Config\ClientCredentials.hpp" />
+    <ClInclude Include="include\Config\common.hpp" />
+    <ClInclude Include="include\Config\DLLWrapper.h" />
+    <ClInclude Include="include\Config\EOSWrapper.h" />
+    <ClInclude Include="include\Config\ProductionEnvironments.hpp" />
+    <ClInclude Include="include\Config\SteamConfig.h" />
+    <ClInclude Include="include\Config\Version.hpp" />
     <ClInclude Include="include\Config\Config.hpp" />
     <ClInclude Include="include\Config\EnumMappings.h" />
     <ClInclude Include="include\Config\PlatformConfig.hpp" />
     <ClInclude Include="include\Config\ProductConfig.hpp" />
-    <ClInclude Include="include\Config\ProductionEnvironments.hpp" />
     <ClInclude Include="include\Config\Serializable.hpp" />
     <ClInclude Include="include\Config\SteamConfig.hpp" />
-    <ClInclude Include="include\Config\Version.hpp" />
     <ClInclude Include="include\Config\WindowsConfig.hpp" />
     <ClInclude Include="include\config_legacy.h" />
     <ClInclude Include="include\eos_helpers.h" />
@@ -146,6 +150,8 @@ copy "$(TargetDir)$(ProjectName)*" "$(OutputUnityAssetsDirectory)" /Y</Command>
     <ClCompile Include="pch.cpp">
       <PrecompiledHeader>Create</PrecompiledHeader>
     </ClCompile>
+    <ClCompile Include="src\Config\DLLWrapper.cpp" />
+    <ClCompile Include="src\Config\EOSWrapper.cpp" />
     <ClCompile Include="src\config_legacy.cpp" />
     <ClCompile Include="src\dllmain.cpp" />
     <ClCompile Include="src\eos_helpers.cpp" />
@@ -155,7 +161,18 @@ copy "$(TargetDir)$(ProjectName)*" "$(OutputUnityAssetsDirectory)" /Y</Command>
     <ClCompile Include="src\logging.cpp" />
     <ClCompile Include="src\string_helpers.cpp" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <Import Project="ConfigPaths.props" />
-  <ImportGroup Label="ExtensionTargets" />
+  <ImportGroup Label="ExtensionTargets">
+    <Import Project="..\packages\nlohmann.json.3.11.2\build\native\nlohmann.json.targets" Condition="Exists('..\packages\nlohmann.json.3.11.2\build\native\nlohmann.json.targets')" />
+  </ImportGroup>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\nlohmann.json.3.11.2\build\native\nlohmann.json.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\nlohmann.json.3.11.2\build\native\nlohmann.json.targets'))" />
+  </Target>
 </Project>

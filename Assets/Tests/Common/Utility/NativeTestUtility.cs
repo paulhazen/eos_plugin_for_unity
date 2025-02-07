@@ -1,4 +1,4 @@
-﻿/*
+/*
  * Copyright (c) 2024 PlayEveryWare
  *
  * Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -20,25 +20,41 @@
  * SOFTWARE.
  */
 
-namespace PlayEveryWare.EpicOnlineServices
+#if EXTERNAL_TO_UNITY
+namespace PlayEveryWare.EpicOnlineServices.Tests.Utility
 {
+    using Epic.OnlineServices.Platform;
+
     /// <summary>
-    /// This class is defined here as a stand-in for UnityEngine.Application,
-    /// so that files compiled outside of the Unity Editor that reference that
-    /// class can still be compiled properly.
+    /// This class serves as an entry point for native code to test equality
+    /// between the config values parsed by managed code and those parsed by
+    /// unmanaged code.
     /// </summary>
-    internal static class Application
+    public static class NativeTestUtility
     {
         /// <summary>
-        /// This is the path of the streaming assets directory relative to the
-        /// output directory of this class library.
+        /// Returns the WindowsOptions used to create the EOS SDK platform when
+        /// it is created from within managed code.
         /// </summary>
-        public static readonly string streamingAssetsPath = @"..\..\..\..\..\..\Assets\StreamingAssets\";
+        /// <returns>
+        /// The result of injesting the configuration values used for EOS
+        /// platform creation..</returns>
+        public static WindowsOptions GetWindowsOptions()
+        {
+            return EOSManager.EOSSingleton.GetEOSCreateOptions().options;
+        }
 
         /// <summary>
-        /// For the purposes of this class library, this field member must be
-        /// present - but it's value is not utilized, so it is being left empty.
+        /// Returns the InitializeOptions used to initialize the EOS SDK
+        /// platform when initialized from within managed code.
         /// </summary>
-        public static readonly string temporaryCachePath = string.Empty;
+        /// <returns>
+        /// The result of injesting the configuration values used for EOS
+        /// platform initialization.</returns>
+        public static InitializeOptions GetInitializeOptions()
+        {
+            return EOSManager.EOSSingleton.GetEOSInitializeOptions().options;
+        }
     }
 }
+#endif

@@ -1,6 +1,5 @@
 #ifndef PEW_EOS_DEFINES_H
 #define PEW_EOS_DEFINES_H
-
 /*
  * Copyright (c) 2021 PlayEveryWare
  *

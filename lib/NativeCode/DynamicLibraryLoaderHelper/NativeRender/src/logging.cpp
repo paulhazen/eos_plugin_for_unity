@@ -201,7 +201,7 @@ namespace pew::eos::logging
 
     //-------------------------------------------------------------------------
     // TODO: If possible, hook this up into a proper logging channel.s
-    void log_warn(const char* log_string)
+    PEW_EOS_API_FUNC(void) log_warn(const char* log_string)
     {
 #if SHOW_DIALOG_BOX_ON_WARN
         show_log_as_dialog(log_string);
@@ -209,12 +209,12 @@ namespace pew::eos::logging
         log_base("WARNING", log_string);
     }
 
-    void log_inform(const char* log_string)
+    PEW_EOS_API_FUNC(void) log_inform(const char* log_string)
     {
         log_base("INFORM", log_string);
     }
 
-    void log_error(const char* log_string)
+    PEW_EOS_API_FUNC(void) log_error(const char* log_string)
     {
         log_base("ERROR", log_string);
     }

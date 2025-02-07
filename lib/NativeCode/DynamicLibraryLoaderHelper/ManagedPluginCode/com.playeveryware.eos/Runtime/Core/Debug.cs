@@ -1,7 +1,4 @@
-#ifndef CLIENT_CREDENTIALS_HPP
-#define CLIENT_CREDENTIALS_HPP
-
-/*
+﻿/*
  * Copyright (c) 2024 PlayEveryWare
  *
  * Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -23,44 +20,29 @@
  * SOFTWARE.
  */
 
-#pragma once
-
-#include <string>
-
-#include "Serializable.hpp"
-
-namespace pew::eos::config
+namespace PlayEveryWare.EpicOnlineServices
 {
-    /**
-     * \brief Extends EOS_Platform_ClientCredentials to include the encryption
-     * key value.
-     */
-    struct ClientCredentials final : Serializable
-    {
-        std::string client_id;
-        std::string client_secret;
-        std::string encryption_key;
+    using System;
 
-    protected:
-        void parse_json_element(const std::string& name, json_value_s& value) override
+    internal class Debug
+    {
+        public static void LogError(string message)
         {
-            if (name == "Value")
-            {
-                from_json(value);
-            }
-            else if (name == "ClientId")
-            {
-                client_id = json_value_as_string(&value)->string;
-            }
-            else if (name == "ClientSecret")
-            {
-                client_secret = json_value_as_string(&value)->string;
-            }
-            else if (name == "EncryptionKey")
-            {
-                encryption_key = json_value_as_string(&value)->string;
-            }
+            Log($"ERROR: {message}");
         }
-    };
+        public static void LogWarning(string message)
+        {
+            Log($"WARNING: {message}");
+        }
+
+        public static void Log(string message)
+        {
+            Console.WriteLine(message);
+        }
+
+        public static void LogException(Exception e)
+        {
+            Console.WriteLine($"An exception was logged. Exception message: \"{e.Message}\".");
+        }
+    }
 }
-#endif
