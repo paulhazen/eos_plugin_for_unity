@@ -71,7 +71,7 @@ namespace PlayEveryWare.EpicOnlineServices
             ConfigFieldType.Text,
             "Use this to indicate to the EOS SDK your game version.",
             0, "https://dev.epicgames.com/docs/api-ref/structs/eos-initialize-options")]
-        [RegexValidation("^[A-Za-z0-9._ !?()+=:-]+$", "Product version must consist of only the following characters: A-Z, a-z, 0-9, dot, underscore, space, exclamation mark, question mark, sign, hyphen, parenthesis, plus, minus, or colon characters.")]
+        [RegexValidation("^[A-Za-z0-9._ !?()+:-]+$", "Product version must consist of only the following characters: A-Z, a-z, 0-9, dot, underscore, space, exclamation mark, question mark, sign, hyphen, parenthesis, plus, minus, or colon characters.")]
         [LengthValidation(1, EOS_INITIALIZEOPTIONS_PRODUCTVERSION_MAX_LENGTH)]
         public string ProductVersion;
 
@@ -146,10 +146,18 @@ namespace PlayEveryWare.EpicOnlineServices
             }
         }
 
+#if EXTERNAL_TO_UNITY
+#pragma warning disable CS0067
+#endif
+
         public static event EventHandler<PlatformConfigsUpdatedEventArgs> DeploymentsUpdatedEvent;
 
         public static event EventHandler<PlatformConfigsUpdatedEventArgs>
             ClientCredentialsUpdatedEvent;
+
+#if EXTERNAL_TO_UNITY
+#pragma warning restore CS0067
+#endif
 
         static ProductConfig()
         {
