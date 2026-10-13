@@ -25,7 +25,7 @@
 
 #if PROJECT_UTILITY_ENABLED
 
-namespace PlayEveryWare.EpicOnlineServices.Editor.Utility
+namespace EOSUnityPlugin.EpicOnlineServices.Editor.Utility
 {
     using System.IO;
     using UnityEngine;

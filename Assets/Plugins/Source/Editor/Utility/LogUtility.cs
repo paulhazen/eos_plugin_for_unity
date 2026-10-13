@@ -27,7 +27,7 @@
 
 #if ENABLE_LOG_FILTER
 
-namespace PlayEveryWare.EpicOnlineServices.Editor.Build
+namespace EOSUnityPlugin.EpicOnlineServices.Editor.Build
 {
     using System;
     using UnityEngine;
