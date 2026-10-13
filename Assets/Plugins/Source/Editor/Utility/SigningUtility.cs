@@ -26,7 +26,7 @@ using UnityEngine;
 using UnityEditor;
 using System.IO;
 
-namespace PlayEveryWare.EpicOnlineServices.Editor
+namespace EOSPlugin.EpicOnlineServices.Editor
 {
     using Config;
     using System;

@@ -20,7 +20,7 @@
  * SOFTWARE.
  */
 
-namespace PlayEveryWare.EpicOnlineServices.Editor.Windows
+namespace EOSPlugin.EpicOnlineServices.Editor.Windows
 {
     using System;
     using System.Collections.Generic;

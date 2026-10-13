@@ -20,7 +20,7 @@
 * SOFTWARE.
 */
 
-namespace PlayEveryWare.EpicOnlineServices.Samples
+namespace EOSPlugin.EpicOnlineServices.Samples
 {
     using System.Collections.Generic;
     using UnityEngine;
@@ -33,7 +33,7 @@ namespace PlayEveryWare.EpicOnlineServices.Samples
     using Epic.OnlineServices;
     using Epic.OnlineServices.Friends;
     using Epic.OnlineServices.Presence;
-    using PlayEveryWare.EpicOnlineServices.Utility;
+    using Utility;
 
     /// <summary>
     /// Provides an implementation of requesting friends from the EOS SDK, arranging, and displaying the information.

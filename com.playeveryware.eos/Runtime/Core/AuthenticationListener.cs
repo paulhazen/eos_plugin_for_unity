@@ -22,7 +22,7 @@
 
 #if !EOS_DISABLE
 
-namespace PlayEveryWare.EpicOnlineServices
+namespace EOSPlugin.EpicOnlineServices
 {
     using Epic.OnlineServices;
     using Epic.OnlineServices.Auth;

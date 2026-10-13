@@ -22,7 +22,7 @@
 
 #if !EOS_DISABLE
 
-namespace PlayEveryWare.EpicOnlineServices.Editor.Utility
+namespace EOSPlugin.EpicOnlineServices.Editor.Utility
 {
     using Common;
 
@@ -31,7 +31,6 @@ namespace PlayEveryWare.EpicOnlineServices.Editor.Utility
 #endif
 
     using EpicOnlineServices.Utility;
-    using PlayEveryWare.EpicOnlineServices.Editor.Windows;
     using System;
     using System.Collections.Generic;
     using System.Globalization;
@@ -40,6 +39,7 @@ namespace PlayEveryWare.EpicOnlineServices.Editor.Utility
     using UnityEditor;
     using UnityEditorInternal;
     using UnityEngine;
+    using Windows;
     using Config = EpicOnlineServices.Config;
 
     public static class GUIEditorUtility

@@ -20,7 +20,7 @@
  * SOFTWARE.
  */
 
-namespace PlayEveryWare.EpicOnlineServices.Tests.Services.Friends
+namespace EOSPlugin.EpicOnlineServices.Tests.Services.Friends
 {
     using Epic.OnlineServices;
     using Epic.OnlineServices.Connect;

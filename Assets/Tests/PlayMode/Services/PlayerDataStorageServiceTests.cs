@@ -20,12 +20,12 @@
  * SOFTWARE.
  */
 
-namespace PlayEveryWare.EpicOnlineServices.Tests.IntegrationTests
+namespace EOSPlugin.EpicOnlineServices.Tests.IntegrationTests
 {
     using NUnit.Framework;
     using System.Collections;
     using UnityEngine.TestTools;
-    using PlayEveryWare.EpicOnlineServices.Samples;
+    using Samples;
     using System;
     using System.Text;
     using System.Collections.Generic;

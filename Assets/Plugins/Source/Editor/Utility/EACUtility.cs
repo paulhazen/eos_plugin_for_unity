@@ -22,18 +22,19 @@
 
 #if !EOS_DISABLE
 
-namespace PlayEveryWare.EpicOnlineServices.Editor.Build
+namespace EOSPlugin.EpicOnlineServices.Editor.Build
 {
     using Common.Extensions;
+    using Config;
     using UnityEditor.Build.Reporting;
     using UnityEditor;
     using UnityEngine;
     using System.IO;
-    using PlayEveryWare.EpicOnlineServices;
+    using EOSPlugin.EpicOnlineServices;
     using System.Collections.Generic;
     using System;
-    using PlayEveryWare.EpicOnlineServices.Editor.Config;
     using System.Threading.Tasks;
+    using Config = EpicOnlineServices.Config;
 
     public class EACUtility
     {

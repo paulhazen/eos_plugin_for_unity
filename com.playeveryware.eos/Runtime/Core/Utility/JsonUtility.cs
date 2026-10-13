@@ -20,7 +20,7 @@
  * SOFTWARE.
 */
 
-namespace PlayEveryWare.EpicOnlineServices.Utility
+namespace EOSPlugin.EpicOnlineServices.Utility
 {
 #if !EXTERNAL_TO_UNITY
     using UnityEngine;
@@ -37,7 +37,7 @@ namespace PlayEveryWare.EpicOnlineServices.Utility
         private static readonly JsonSerializerSettings s_serializerSettings =
             new() { Converters = new JsonConverter[]
             {
-                new PlayEveryWare.EpicOnlineServices.GuidConverter(),
+                new GuidConverter(),
                 new StringEnumConverter(),
                 new VersionConverter(),
             } };

@@ -24,7 +24,7 @@
 #define DISABLEDISCORD
 #endif
 
-namespace PlayEveryWare.EpicOnlineServices.Samples.Discord
+namespace EOSPlugin.EpicOnlineServices.Samples.Discord
 {
     using System.Collections.Generic;
     using UnityEngine;
@@ -35,7 +35,7 @@ namespace PlayEveryWare.EpicOnlineServices.Samples.Discord
     using System.Threading.Tasks;
     using Epic.OnlineServices;
     using Epic.OnlineServices.Connect;
-    using JsonUtility = PlayEveryWare.EpicOnlineServices.Utility.JsonUtility;
+    using JsonUtility = Utility.JsonUtility;
 
     [DisallowMultipleComponent]
     public class DiscordManager : MonoBehaviour

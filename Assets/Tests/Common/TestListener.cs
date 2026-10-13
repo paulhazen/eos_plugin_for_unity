@@ -21,7 +21,7 @@
  */
 
 using NUnit.Framework.Interfaces;
-using PlayEveryWare.EpicOnlineServices.Tests;
+using EOSPlugin.EpicOnlineServices.Tests;
 using UnityEngine.TestRunner;
 
 [assembly: TestRunCallback(typeof(TestListener))]

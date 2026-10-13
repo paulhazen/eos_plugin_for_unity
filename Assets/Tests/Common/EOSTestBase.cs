@@ -20,7 +20,7 @@
  * SOFTWARE.
  */
 
-namespace PlayEveryWare.EpicOnlineServices.Tests
+namespace EOSPlugin.EpicOnlineServices.Tests
 {
     using System;
     using System.Collections;

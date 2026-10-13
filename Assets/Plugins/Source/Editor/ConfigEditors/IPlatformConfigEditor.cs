@@ -22,7 +22,7 @@
 
 #if !EOS_DISABLE
 
-namespace PlayEveryWare.EpicOnlineServices.Editor
+namespace EOSPlugin.EpicOnlineServices.Editor
 {
     using UnityEngine;
 

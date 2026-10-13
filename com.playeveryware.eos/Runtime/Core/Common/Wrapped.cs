@@ -20,7 +20,7 @@
  * SOFTWARE.
  */
 
-namespace PlayEveryWare.Common
+namespace EOSPlugin.Common
 {
 
     /// <summary>

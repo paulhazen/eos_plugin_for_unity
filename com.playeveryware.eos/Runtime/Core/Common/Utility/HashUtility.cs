@@ -20,7 +20,7 @@
  * SOFTWARE.
  */
 
-namespace PlayEveryWare.EpicOnlineServices.Utility
+namespace EOSPlugin.EpicOnlineServices.Utility
 {
     using System;
 

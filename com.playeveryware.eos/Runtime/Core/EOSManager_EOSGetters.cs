@@ -24,7 +24,7 @@ using UnityEngine;
 
 #if !EOS_DISABLE
 
-namespace PlayEveryWare.EpicOnlineServices
+namespace EOSPlugin.EpicOnlineServices
 {
     public partial class EOSManager : MonoBehaviour
     {

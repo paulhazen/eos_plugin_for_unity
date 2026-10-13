@@ -1,6 +1,6 @@
 using System;
 
-namespace PlayEveryWare.EpicOnlineServices
+namespace EOSPlugin.EpicOnlineServices
 {
     [AttributeUsage(AttributeTargets.Method)]
     internal sealed class MonoPInvokeCallbackAttribute : Attribute

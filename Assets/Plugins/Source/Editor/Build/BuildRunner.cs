@@ -22,12 +22,13 @@
 
 #if !EOS_DISABLE
 
-namespace PlayEveryWare.EpicOnlineServices.Editor.Build
+namespace EOSPlugin.EpicOnlineServices.Editor.Build
 {
-    using PlayEveryWare.EpicOnlineServices;
+    using EOSPlugin.EpicOnlineServices;
     using Utility;
     using UnityEditor.Build;
     using UnityEditor.Build.Reporting;
+    using Config = EpicOnlineServices.Config;
 
     public class BuildRunner : IPreprocessBuildWithReport, IPostprocessBuildWithReport
     {

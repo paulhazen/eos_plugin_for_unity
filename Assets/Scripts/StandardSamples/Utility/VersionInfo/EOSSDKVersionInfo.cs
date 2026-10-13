@@ -1,4 +1,4 @@
-namespace PlayEveryWare.EpicOnlineServices.Samples
+namespace EOSPlugin.EpicOnlineServices.Samples
 {
     using UnityEngine;
     using UnityEngine.UI;

@@ -1,4 +1,4 @@
-using PlayEveryWare.EpicOnlineServices;
+using EOSPlugin.EpicOnlineServices;
 using System;
 using System.Collections.Generic;
 using System.IO;

@@ -20,7 +20,7 @@
 * SOFTWARE.
 */
 
-namespace PlayEveryWare.EpicOnlineServices.Samples
+namespace EOSPlugin.EpicOnlineServices.Samples
 {
     using System;
     using System.Collections.Generic;
@@ -29,7 +29,7 @@ namespace PlayEveryWare.EpicOnlineServices.Samples
     using Epic.OnlineServices.Lobby;
     using Epic.OnlineServices.RTC;
     using Epic.OnlineServices.RTCAudio;
-    using PlayEveryWare.EpicOnlineServices.Utility;
+    using Utility;
 
     public enum LobbyChangeType
     {

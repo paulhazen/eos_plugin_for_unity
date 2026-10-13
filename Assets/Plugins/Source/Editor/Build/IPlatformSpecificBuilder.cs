@@ -20,7 +20,7 @@
  * SOFTWARE.
  */
 
-namespace PlayEveryWare.EpicOnlineServices.Editor.Build
+namespace EOSPlugin.EpicOnlineServices.Editor.Build
 {
     using UnityEditor.Build.Reporting;
 

@@ -20,7 +20,7 @@
  * SOFTWARE.
  */
 
-namespace PlayEveryWare.Common
+namespace EOSPlugin.Common
 {
     using Newtonsoft.Json;
     using System.Collections.Generic;

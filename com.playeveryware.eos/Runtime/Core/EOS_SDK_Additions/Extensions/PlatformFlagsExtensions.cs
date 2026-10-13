@@ -22,7 +22,7 @@
 
 #if !EOS_DISABLE
 
-namespace PlayEveryWare.EpicOnlineServices.Extensions
+namespace EOSPlugin.EpicOnlineServices.Extensions
 {
     using Epic.OnlineServices.Platform;
     using System;

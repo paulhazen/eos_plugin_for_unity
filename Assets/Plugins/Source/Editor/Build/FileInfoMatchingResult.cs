@@ -22,7 +22,7 @@
 
 using System.IO;
 
-namespace PlayEveryWare.EpicOnlineServices.Editor.Build
+namespace EOSPlugin.EpicOnlineServices.Editor.Build
 {
     public class FileInfoMatchingResult
     {

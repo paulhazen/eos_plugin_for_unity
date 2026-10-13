@@ -22,14 +22,14 @@
 
 #if !EOS_DISABLE
 
-namespace PlayEveryWare.EpicOnlineServices
+namespace EOSPlugin.EpicOnlineServices
 {
+    using Common.Utility;
     using System.Collections.Generic;
     using System;
 
 #if UNITY_EDITOR
     using UnityEditor;
-    using PlayEveryWare.Common.Utility;
 #endif
 
 #if !EXTERNAL_TO_UNITY

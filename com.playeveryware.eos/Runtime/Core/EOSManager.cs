@@ -55,7 +55,7 @@
 #define USE_EOS_DYNAMIC_BINDINGS
 #endif
 
-namespace PlayEveryWare.EpicOnlineServices
+namespace EOSPlugin.EpicOnlineServices
 {
     //using Extensions;
     using Common;
@@ -64,6 +64,7 @@ namespace PlayEveryWare.EpicOnlineServices
     using System;
     using System.Collections.Generic;
     using System.Collections;
+    using Utility;
 
 #if !EOS_DISABLE
     using Epic.OnlineServices.Platform;
@@ -74,8 +75,6 @@ namespace PlayEveryWare.EpicOnlineServices
     using Epic.OnlineServices.UI;
 
     using Epic.OnlineServices.Presence;
-    using PlayEveryWare.EpicOnlineServices.Utility;
-
     using Extensions;
     using System.Diagnostics;
     using System.Globalization;

@@ -20,13 +20,13 @@
 * SOFTWARE.
 */
 
-namespace PlayEveryWare.EpicOnlineServices.Samples
+namespace EOSPlugin.EpicOnlineServices.Samples
 {
     using System;
     using System.Collections.Generic;
     using UnityEngine;
     using UnityEngine.UI;
-    using static PlayEveryWare.EpicOnlineServices.Samples.SelectableStateHandler;
+    using static SelectableStateHandler;
     using JsonUtility = Utility.JsonUtility;
 
     [Serializable]

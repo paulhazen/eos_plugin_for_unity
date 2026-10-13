@@ -20,7 +20,7 @@
 * SOFTWARE.
 */
 
-namespace PlayEveryWare.EpicOnlineServices.Samples
+namespace EOSPlugin.EpicOnlineServices.Samples
 {
     using System;
     using UnityEngine;

@@ -22,7 +22,7 @@
 
 //#define EOS_RUNTIME_NEW_CONFIG_SYSTEM
 
-namespace PlayEveryWare.EpicOnlineServices
+namespace EOSPlugin.EpicOnlineServices
 {
 #if !EOS_DISABLE
     using Epic.OnlineServices.Auth;

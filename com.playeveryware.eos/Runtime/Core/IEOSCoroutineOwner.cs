@@ -21,7 +21,7 @@
  */
 
 
-namespace PlayEveryWare.EpicOnlineServices
+namespace EOSPlugin.EpicOnlineServices
 {
     using System.Collections;
     

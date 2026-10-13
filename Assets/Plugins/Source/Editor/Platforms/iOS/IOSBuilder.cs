@@ -20,7 +20,7 @@
  * SOFTWARE.
  */
 #if !EOS_DISABLE
-namespace PlayEveryWare.EpicOnlineServices.Editor.Build
+namespace EOSPlugin.EpicOnlineServices.Editor.Build
 {
     using EpicOnlineServices.Utility;
     using System.IO;

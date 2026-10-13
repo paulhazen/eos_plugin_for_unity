@@ -20,7 +20,7 @@
  * SOFTWARE.
  */
 
-namespace PlayEveryWare.Common.Utility
+namespace EOSPlugin.Common.Utility
 {
 #if UNITY_EDITOR
     using System.Collections.Generic;

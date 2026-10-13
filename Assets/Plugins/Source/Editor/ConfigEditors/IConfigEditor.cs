@@ -20,7 +20,7 @@
 * SOFTWARE.
 */
 
-namespace PlayEveryWare.EpicOnlineServices.Editor
+namespace EOSPlugin.EpicOnlineServices.Editor
 {
     using System;
     using System.Threading.Tasks;

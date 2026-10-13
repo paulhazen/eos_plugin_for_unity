@@ -20,7 +20,7 @@
  * SOFTWARE.
  */
 
-namespace PlayEveryWare.EpicOnlineServices.Tests.Config
+namespace EOSPlugin.EpicOnlineServices.Tests.Config
 {
     using Epic.OnlineServices.UI;
     using NUnit.Framework;
@@ -113,7 +113,7 @@ namespace PlayEveryWare.EpicOnlineServices.Tests.Config
         }
 
         /// <summary>
-        /// Converts a '0' into <see cref="TestFlagWithoutZeroEnum"/> using the <see cref="ListOfStringsToEnumConverterTestClass"/>.
+        /// Converts a '0' into <see cref="TestFlagWithoutZeroEnum"/> using the <see cref="ListOfStringsToEnumConverterTestClass{TEnum}"/>.
         /// Even though <see cref="TestFlagWithoutZeroEnum"/> lacks a 0, it is a Flag enum.
         /// The resulting value should be equivalent to a '0' integer, as opposed to using the lowest value.
         /// </summary>

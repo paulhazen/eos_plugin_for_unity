@@ -22,7 +22,7 @@
 
 // TODO: This class only serves to remove a warning.
 //       It may be removed if when more files are added to the com.playeveryware.eos assembly.
-namespace PlayEveryWare.EpicOnlineServices
+namespace EOSPlugin.EpicOnlineServices
 {
 
     public class EOSDummyClass

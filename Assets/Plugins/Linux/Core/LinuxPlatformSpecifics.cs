@@ -23,7 +23,7 @@
 #if !EOS_DISABLE
 
 //#define ENABLE_CONFIGURE_STEAM_FROM_MANAGED
-using PlayEveryWare.EpicOnlineServices.Utility;
+using EOSPlugin.EpicOnlineServices.Utility;
 using UnityEngine;
 using UnityEngine.Scripting;
 using System.Runtime.InteropServices;

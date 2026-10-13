@@ -20,7 +20,7 @@
 * SOFTWARE.
 */
 
-namespace PlayEveryWare.EpicOnlineServices.Samples
+namespace EOSPlugin.EpicOnlineServices.Samples
 {
     using System;
     using System.Collections.Generic;
@@ -28,7 +28,7 @@ namespace PlayEveryWare.EpicOnlineServices.Samples
     using UnityEngine;
     using Epic.OnlineServices;
     using Epic.OnlineServices.P2P;
-    using PlayEveryWare.EpicOnlineServices.Utility;
+    using Utility;
 
     /// <summary>
     /// Struct <c>ChatEntry</c> is used to store cached chat data in <c>UIPeer2PeerMenu</c>.

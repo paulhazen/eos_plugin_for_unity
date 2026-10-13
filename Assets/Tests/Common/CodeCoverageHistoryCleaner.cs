@@ -21,7 +21,7 @@
  */
 
 
-namespace PlayEveryWare.EpicOnlineServices.Tests
+namespace EOSPlugin.EpicOnlineServices.Tests
 {
     using System.Collections.Generic;
     using System.IO;

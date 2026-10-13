@@ -20,7 +20,7 @@
  * SOFTWARE.
  */
 
-namespace PlayEveryWare.EpicOnlineServices.Utility
+namespace EOSPlugin.EpicOnlineServices.Utility
 {
     /// <summary>
     /// Used to safely convert between signed and unsigned values.

@@ -26,9 +26,9 @@
 //       Alternatively, implement it so that it behaves as expected on a Linux machine (ie running the Makefile
 //       natively.
 
-namespace PlayEveryWare.EpicOnlineServices.Editor.Build
+namespace EOSPlugin.EpicOnlineServices.Editor.Build
 {
-    using PlayEveryWare.EpicOnlineServices.Utility;
+    using EpicOnlineServices.Utility;
     using System;
     using System.Collections.Generic;
     using System.Diagnostics;
@@ -41,7 +41,7 @@ namespace PlayEveryWare.EpicOnlineServices.Editor.Build
     using UnityEditor.Build;
     using UnityEngine;
     using Debug = UnityEngine.Debug;
-    using JsonUtility = PlayEveryWare.EpicOnlineServices.Utility.JsonUtility;
+    using JsonUtility = EpicOnlineServices.Utility.JsonUtility;
     /// <summary>
     /// Contains functions to carry out a variety of tasks related to building.
     /// </summary>

@@ -20,7 +20,7 @@
  * SOFTWARE.
  */
 
-namespace PlayEveryWare.EpicOnlineServices.Tests.Services.PlayerStorage
+namespace EOSPlugin.EpicOnlineServices.Tests.Services.PlayerStorage
 {
     using Epic.OnlineServices;
     using Epic.OnlineServices.PlayerDataStorage;

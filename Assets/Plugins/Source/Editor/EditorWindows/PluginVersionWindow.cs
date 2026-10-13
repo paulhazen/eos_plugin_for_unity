@@ -25,10 +25,10 @@ using System.IO;
 using UnityEditor;
 using UnityEngine;
 
-namespace PlayEveryWare.EpicOnlineServices.Editor.Windows
+namespace EOSPlugin.EpicOnlineServices.Editor.Windows
 {
     using EpicOnlineServices.Utility;
-    using JsonUtility = PlayEveryWare.EpicOnlineServices.Utility.JsonUtility;
+    using JsonUtility = EpicOnlineServices.Utility.JsonUtility;
 
     /// <summary>
     /// Unity Editor tool to display plug-in version information.

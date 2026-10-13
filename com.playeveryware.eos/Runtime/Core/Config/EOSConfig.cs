@@ -29,7 +29,7 @@
 #pragma warning disable CS0169 // Disable unused field warnings
 #endif
 
-namespace PlayEveryWare.EpicOnlineServices
+namespace EOSPlugin.EpicOnlineServices
 {
     // This compile conditional is here so that when EOS_DISABLE is defined, and
     // subsequently the Epic namespace is not available, it's exclusion does not
@@ -47,7 +47,7 @@ namespace PlayEveryWare.EpicOnlineServices
 #endif
     using System.Text.RegularExpressions;
     using Newtonsoft.Json;
-    using PlayEveryWare.EpicOnlineServices.Utility;
+    using EOSPlugin.EpicOnlineServices.Utility;
     using System.Threading.Tasks;
 
     /// <summary>

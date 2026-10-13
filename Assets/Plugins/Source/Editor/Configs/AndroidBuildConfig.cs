@@ -22,7 +22,7 @@
 
 #if !EOS_DISABLE
 
-namespace PlayEveryWare.EpicOnlineServices.Editor.Config
+namespace EOSPlugin.EpicOnlineServices.Editor.Config
 {
     using System;
 

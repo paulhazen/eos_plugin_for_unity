@@ -20,10 +20,10 @@
  * SOFTWARE.
  */
 
-namespace PlayEveryWare.EpicOnlineServices.Tests.Config
+namespace EOSPlugin.EpicOnlineServices.Tests.Config
 {
+    using Common;
     using NUnit.Framework;
-    using PlayEveryWare.Common;
     using System;
     using System.Collections.Generic;
     using System.IO;

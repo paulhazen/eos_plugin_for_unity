@@ -23,7 +23,7 @@
 
 #if !EOS_DISABLE
 
-namespace PlayEveryWare.EpicOnlineServices.Events
+namespace EOSPlugin.EpicOnlineServices.Events
 {
     using Epic.OnlineServices;
 

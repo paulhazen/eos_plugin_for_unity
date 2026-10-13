@@ -20,12 +20,12 @@
 * SOFTWARE.
 */
 
-namespace PlayEveryWare.EpicOnlineServices.Samples
+namespace EOSPlugin.EpicOnlineServices.Samples
 {
     using UnityEngine;
     using UnityEngine.UI;
     using UnityEngine.EventSystems;
-    using static PlayEveryWare.EpicOnlineServices.Samples.SelectableStateHandler;
+    using static SelectableStateHandler;
 
     public class UIConsoleInputField : MonoBehaviour
     {

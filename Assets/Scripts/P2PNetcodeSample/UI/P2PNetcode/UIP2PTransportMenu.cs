@@ -20,7 +20,7 @@
 * SOFTWARE.
 */
 
-namespace PlayEveryWare.EpicOnlineServices.Samples.Network
+namespace EOSPlugin.EpicOnlineServices.Samples.Network
 {
     using System;
     using UnityEngine;
@@ -36,7 +36,7 @@ namespace PlayEveryWare.EpicOnlineServices.Samples.Network
     using UnityEngine.InputSystem;
 #endif
 
-    using JsonUtility = PlayEveryWare.EpicOnlineServices.Utility.JsonUtility;
+    using JsonUtility = Utility.JsonUtility;
 
     public class P2PTransportPresenceData
     {

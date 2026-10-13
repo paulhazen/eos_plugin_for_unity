@@ -20,7 +20,7 @@
  * SOFTWARE.
  */
 
-namespace PlayEveryWare.EpicOnlineServices.Tests.Services.Sessions
+namespace EOSPlugin.EpicOnlineServices.Tests.Services.Sessions
 {
     using Epic.OnlineServices;
     using Epic.OnlineServices.Sessions;
@@ -33,6 +33,7 @@ namespace PlayEveryWare.EpicOnlineServices.Tests.Services.Sessions
     using System.Text;
     using System.Collections.Generic;
     using System.Text.RegularExpressions;
+    using SessionSearch = Samples.SessionSearch;
 
     public partial class EOSSessionsManagerTests : EOSTestBase
     {
@@ -158,7 +159,7 @@ namespace PlayEveryWare.EpicOnlineServices.Tests.Services.Sessions
             ManagerInstance.GetCurrentSearch().RunOnSearchResultReceived += (Samples.SessionSearch search) => { waiting = false; };
             yield return new WaitUntilDone(10f, () => !waiting);
 
-            PlayEveryWare.EpicOnlineServices.Samples.SessionSearch search = ManagerInstance.GetCurrentSearch();
+            SessionSearch search = ManagerInstance.GetCurrentSearch();
 
             Assert.NotNull(search, $"Current search is null.");
 
@@ -203,7 +204,7 @@ namespace PlayEveryWare.EpicOnlineServices.Tests.Services.Sessions
             ManagerInstance.GetCurrentSearch().RunOnSearchResultReceived += (Samples.SessionSearch search) => { waiting = false; };
             yield return new WaitUntilDone(10f, () => { return !waiting; });
 
-            PlayEveryWare.EpicOnlineServices.Samples.SessionSearch search = ManagerInstance.GetCurrentSearch();
+            SessionSearch search = ManagerInstance.GetCurrentSearch();
 
             Assert.NotNull(search, $"Current search is null.");
 
@@ -303,7 +304,7 @@ namespace PlayEveryWare.EpicOnlineServices.Tests.Services.Sessions
                 ManagerInstance.GetCurrentSearch().RunOnSearchResultReceived += (Samples.SessionSearch search) => { waiting = false; };
                 yield return new WaitUntilDone(10f, () => !waiting);
 
-                PlayEveryWare.EpicOnlineServices.Samples.SessionSearch search = ManagerInstance.GetCurrentSearch();
+                SessionSearch search = ManagerInstance.GetCurrentSearch();
 
                 Assert.NotNull(search, $"Current search is null.");
 

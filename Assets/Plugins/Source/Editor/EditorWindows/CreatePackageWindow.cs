@@ -26,11 +26,11 @@ using UnityEngine;
 using UnityEditor;
 
 // make lines a little shorter
-using UPMUtility = PlayEveryWare.EpicOnlineServices.Editor.Utility.UnityPackageCreationUtility;
+using UPMUtility = EOSPlugin.EpicOnlineServices.Editor.Utility.UnityPackageCreationUtility;
 
 using System;
 
-namespace PlayEveryWare.EpicOnlineServices.Editor.Windows
+namespace EOSPlugin.EpicOnlineServices.Editor.Windows
 {
     using Config;
     using EpicOnlineServices.Utility;
@@ -152,14 +152,14 @@ namespace PlayEveryWare.EpicOnlineServices.Editor.Windows
             GUILayout.BeginHorizontal();
             GUILayout.FlexibleSpace();
 
-            List<(string buttonLabel, UPMUtility.PackageType packageToMake, bool enableButton)> buttons = new()
+            List<(string buttonLabel, UnityPackageCreationUtility.PackageType packageToMake, bool enableButton)> buttons = new()
             {
-                ("UPM Directory", UPMUtility.PackageType.UPM,        true),
-                ("UPM Tarball",   UPMUtility.PackageType.UPMTarball, true),
-                (".unitypackage", UPMUtility.PackageType.DotUnity,   false)
+                ("UPM Directory", UnityPackageCreationUtility.PackageType.UPM,        true),
+                ("UPM Tarball",   UnityPackageCreationUtility.PackageType.UPMTarball, true),
+                (".unitypackage", UnityPackageCreationUtility.PackageType.DotUnity,   false)
             };
 
-            foreach ((string buttonLabel, UPMUtility.PackageType packageToMake, bool enabled) in buttons)
+            foreach ((string buttonLabel, UnityPackageCreationUtility.PackageType packageToMake, bool enabled) in buttons)
             {
                 GUI.enabled = enabled && !_operationInProgress;
                 if (GUILayout.Button($"Export {buttonLabel}", GUILayout.MaxWidth(200)))
@@ -284,7 +284,7 @@ namespace PlayEveryWare.EpicOnlineServices.Editor.Windows
             GUILayout.Space(10f);
         }
 
-        private async void StartCreatePackageAsync(UPMUtility.PackageType type, bool clean)
+        private async void StartCreatePackageAsync(UnityPackageCreationUtility.PackageType type, bool clean)
         {
             try
             {
@@ -340,7 +340,7 @@ namespace PlayEveryWare.EpicOnlineServices.Editor.Windows
                     Repaint();
                 });
 
-                await UPMUtility.CreatePackage(type, clean, progressHandler, _createPackageCancellationTokenSource.Token);
+                await UnityPackageCreationUtility.CreatePackage(type, clean, progressHandler, _createPackageCancellationTokenSource.Token);
 
                 if (EditorUtility.DisplayDialog("Package Created", "Package was successfully created",
                         "Open Output Path", "Close"))

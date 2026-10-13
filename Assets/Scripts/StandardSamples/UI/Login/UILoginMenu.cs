@@ -20,7 +20,7 @@
 * SOFTWARE.
 */
 
-namespace PlayEveryWare.EpicOnlineServices.Samples
+namespace EOSPlugin.EpicOnlineServices.Samples
 {
     using Epic.OnlineServices;
     using Epic.OnlineServices.Auth;
@@ -43,7 +43,7 @@ namespace PlayEveryWare.EpicOnlineServices.Samples
 using UnityEngine.InputSystem;
 #endif
 
-    using PlayEveryWare.EpicOnlineServices;
+    using EOSPlugin.EpicOnlineServices;
 
     public class UILoginMenu : MonoBehaviour
     {

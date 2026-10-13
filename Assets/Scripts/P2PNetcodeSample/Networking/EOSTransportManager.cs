@@ -21,7 +21,7 @@
 */
 
 //#define EOS_TRANSPORTMANAGER_DEBUG
-namespace PlayEveryWare.EpicOnlineServices.Samples.Network
+namespace EOSPlugin.EpicOnlineServices.Samples.Network
 {
     using System;
     using System.Collections.Generic;
@@ -36,8 +36,8 @@ namespace PlayEveryWare.EpicOnlineServices.Samples.Network
 
     using Epic.OnlineServices;
     using Epic.OnlineServices.P2P;
-    using PlayEveryWare.EpicOnlineServices.Utility;
     using System.Text.RegularExpressions;
+    using Utility;
 
     public class EOSTransportManager : IEOSSubManager
     {

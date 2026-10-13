@@ -20,7 +20,7 @@
 * SOFTWARE.
 */
 
-﻿namespace PlayEveryWare.EpicOnlineServices
+﻿namespace EOSPlugin.EpicOnlineServices
 {
     /// <summary>
     /// Interface for <c>Manager</c> classes.

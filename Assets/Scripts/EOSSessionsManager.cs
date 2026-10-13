@@ -23,7 +23,7 @@
 // Uncomment this define, or define it in build symbols, to get non-error debugging messages from this Manager
 // #define ENABLE_DEBUG_SESSIONS_MANAGER
 
-namespace PlayEveryWare.EpicOnlineServices.Samples
+namespace EOSPlugin.EpicOnlineServices.Samples
 {
     using System;
     using System.Collections.Generic;
@@ -35,10 +35,10 @@ namespace PlayEveryWare.EpicOnlineServices.Samples
     using Epic.OnlineServices.Presence;
     using Epic.OnlineServices.UI;
     using Epic.OnlineServices.P2P;
-    using PlayEveryWare.EpicOnlineServices.Utility;
     using System.Text.RegularExpressions;
     using System.Text;
     using UnityEngine.Events;
+    using Utility;
 
     /// <summary>
     /// Class represents a Session search and search results

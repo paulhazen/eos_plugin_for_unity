@@ -22,7 +22,7 @@
 
 #if !EOS_DISABLE
 
-namespace PlayEveryWare.EpicOnlineServices.Editor.Windows
+namespace EOSPlugin.EpicOnlineServices.Editor.Windows
 {
     using System;
     using System.IO;
@@ -32,6 +32,7 @@ namespace PlayEveryWare.EpicOnlineServices.Editor.Windows
     using Config;
     using System.Linq;
     using System.Threading.Tasks;
+    using Config = EpicOnlineServices.Config;
 
     /// <summary>
     /// Creates the view for showing the eos plugin editor config values.
@@ -106,7 +107,7 @@ namespace PlayEveryWare.EpicOnlineServices.Editor.Windows
             }
         }
 
-        private IConfigEditor SetupConfigEditor<T>() where T : PlayEveryWare.EpicOnlineServices.Config
+        private IConfigEditor SetupConfigEditor<T>() where T : Config
         {
             ConfigEditor<T> newEditor = new (Repaint);
             newEditor.Expanded += (sender, args) =>

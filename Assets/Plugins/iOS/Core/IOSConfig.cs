@@ -22,7 +22,7 @@
 
 #if !EOS_DISABLE
 
-namespace PlayEveryWare.EpicOnlineServices
+namespace EOSPlugin.EpicOnlineServices
 {
     // Flags specifically for iOS. Note that labels for the baser
     // PlatformConfig need to be specified here.

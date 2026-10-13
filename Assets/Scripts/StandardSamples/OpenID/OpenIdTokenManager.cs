@@ -20,7 +20,7 @@
 * SOFTWARE.
 */
 
-namespace PlayEveryWare.EpicOnlineServices.Samples.OpenId
+namespace EOSPlugin.EpicOnlineServices.Samples.OpenId
 {
     using Epic.OnlineServices;
     using Epic.OnlineServices.Connect;
@@ -29,8 +29,8 @@ namespace PlayEveryWare.EpicOnlineServices.Samples.OpenId
     using System.Collections.Generic;
     using UnityEngine;
     using UnityEngine.Networking;
-    using static PlayEveryWare.EpicOnlineServices.EOSManager;
-    using JsonUtility = PlayEveryWare.EpicOnlineServices.Utility.JsonUtility;
+    using static EOSManager;
+    using JsonUtility = Utility.JsonUtility;
 
     //This sample uses a Google Cloud Function to implement a basic OpenID authentication server.
     //Before using the OpenIdRequestManager, a NodeJS cloud function must be created on Google Cloud Platform

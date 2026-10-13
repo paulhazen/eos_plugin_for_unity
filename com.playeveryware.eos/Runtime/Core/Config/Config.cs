@@ -34,7 +34,7 @@
 #pragma warning disable CS0649
 #endif
 
-namespace PlayEveryWare.EpicOnlineServices
+namespace EOSPlugin.EpicOnlineServices
 {
     using Common;
     using Newtonsoft.Json;
@@ -52,7 +52,7 @@ namespace PlayEveryWare.EpicOnlineServices
     using System.IO;
     using System.Reflection;
     using System.Text;
-    using JsonUtility = PlayEveryWare.EpicOnlineServices.Utility.JsonUtility;
+    using JsonUtility = Utility.JsonUtility;
     using System.Runtime.CompilerServices;
     using Utility;
 

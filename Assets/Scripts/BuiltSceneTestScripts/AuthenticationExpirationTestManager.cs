@@ -20,13 +20,14 @@
  * SOFTWARE.
  */
 
-namespace PlayEveryWare.EpicOnlineServices.Tests
+namespace EOSPlugin.EpicOnlineServices.Tests
 {
     using Epic.OnlineServices;
     using Epic.OnlineServices.Auth;
     using Epic.OnlineServices.Connect;
     using EpicOnlineServices;
     using Samples;
+    using Samples.Discord;
     using Samples.Steam;
     using System;
     using System.Collections;
@@ -149,7 +150,7 @@ namespace PlayEveryWare.EpicOnlineServices.Tests
                     };
                     attemptAuthenticationFunction = (Action<Result, ContinuanceToken> res) =>
                     {
-                        PlayEveryWare.EpicOnlineServices.Samples.Steam.SteamManager.Instance
+                        SteamManager.Instance
                             .StartConnectLoginWithSteamSessionTicket(
                                 (Epic.OnlineServices.Connect.LoginCallbackInfo info) =>
                                 {
@@ -161,7 +162,7 @@ namespace PlayEveryWare.EpicOnlineServices.Tests
                     retrieveTokenFunction = SteamManager.Instance.RequestAppTicket;
                     attemptAuthenticationFunction = (Action<Result, ContinuanceToken> res) =>
                     {
-                        PlayEveryWare.EpicOnlineServices.Samples.Steam.SteamManager.Instance
+                        SteamManager.Instance
                             .StartConnectLoginWithSteamAppTicket((Epic.OnlineServices.Connect.LoginCallbackInfo info) =>
                             {
                                 res?.Invoke(info.ResultCode, info.ContinuanceToken);
@@ -169,11 +170,11 @@ namespace PlayEveryWare.EpicOnlineServices.Tests
                     };
                     break;
                 case AuthenticationProviderToTest.Discord:
-                    retrieveTokenFunction = PlayEveryWare.EpicOnlineServices.Samples.Discord.DiscordManager.Instance
+                    retrieveTokenFunction = DiscordManager.Instance
                         .RequestOAuth2Token;
                     attemptAuthenticationFunction = (Action<Result, ContinuanceToken> res) =>
                     {
-                        PlayEveryWare.EpicOnlineServices.Samples.Discord.DiscordManager.Instance.StartConnectLogin(
+                        DiscordManager.Instance.StartConnectLogin(
                             (Epic.OnlineServices.Connect.LoginCallbackInfo info) =>
                             {
                                 res?.Invoke(info.ResultCode, info.ContinuanceToken);

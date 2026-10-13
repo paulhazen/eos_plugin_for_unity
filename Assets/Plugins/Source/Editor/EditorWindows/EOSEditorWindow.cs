@@ -20,7 +20,7 @@
  * SOFTWARE.
  */
 
-namespace PlayEveryWare.EpicOnlineServices.Editor.Windows
+namespace EOSPlugin.EpicOnlineServices.Editor.Windows
 {
     using System;
     using System.Collections.Generic;
@@ -30,7 +30,7 @@ namespace PlayEveryWare.EpicOnlineServices.Editor.Windows
     using System.Threading.Tasks;
     using UnityEditor;
     using UnityEngine;
-    using JsonUtility = PlayEveryWare.EpicOnlineServices.Utility.JsonUtility;
+    using JsonUtility = EpicOnlineServices.Utility.JsonUtility;
 
     [Serializable]
     public abstract class EOSEditorWindow : EditorWindow

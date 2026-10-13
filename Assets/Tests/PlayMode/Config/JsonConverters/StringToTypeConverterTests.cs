@@ -20,7 +20,7 @@
  * SOFTWARE.
  */
 
-namespace PlayEveryWare.EpicOnlineServices.Tests.Config
+namespace EOSPlugin.EpicOnlineServices.Tests.Config
 {
     using NUnit.Framework;
     using Newtonsoft.Json;

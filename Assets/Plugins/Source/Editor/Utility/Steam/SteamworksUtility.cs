@@ -33,7 +33,7 @@ using System.Collections.Generic;
 using Steamworks;
 #endif
 
-namespace PlayEveryWare.EpicOnlineServices.Editor.Utility
+namespace EOSPlugin.EpicOnlineServices.Editor.Utility
 {
     public class SteamworksUtility : MonoBehaviour
     {

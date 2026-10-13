@@ -22,7 +22,7 @@
 
 #if !EOS_DISABLE
 
-namespace PlayEveryWare.EpicOnlineServices
+namespace EOSPlugin.EpicOnlineServices
 {
     // This compile conditional is here so that when EOS is disabled, nothing is
     // referenced in the Epic namespace.

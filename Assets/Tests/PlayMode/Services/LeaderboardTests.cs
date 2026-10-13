@@ -20,7 +20,7 @@
  * SOFTWARE.
  */
 
-namespace PlayEveryWare.EpicOnlineServices.Tests.Services.Leaderboard
+namespace EOSPlugin.EpicOnlineServices.Tests.Services.Leaderboard
 {
     using Epic.OnlineServices;
     using Epic.OnlineServices.Leaderboards;
