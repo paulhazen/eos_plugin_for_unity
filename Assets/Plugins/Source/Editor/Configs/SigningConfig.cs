@@ -24,7 +24,7 @@
 
 using System.Collections.Generic;
 
-namespace EOSPlugin.EpicOnlineServices.Editor.Config
+namespace EOSUnityPlugin.EpicOnlineServices.Editor.Config
 {
     using System;
 

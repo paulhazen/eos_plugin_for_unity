@@ -21,9 +21,9 @@
  */
 
 
-namespace EOSPlugin.EpicOnlineServices.Editor.Windows
+namespace EOSUnityPlugin.EpicOnlineServices.Editor.Windows
 {
-    using EOSPlugin.EpicOnlineServices.Editor.Utility;
+    using EOSUnityPlugin.EpicOnlineServices.Editor.Utility;
     using System;
     using UnityEditor;
     using UnityEngine;

@@ -20,7 +20,7 @@
  * SOFTWARE.
  */
 
-namespace EOSPlugin.EpicOnlineServices
+namespace EOSUnityPlugin.EpicOnlineServices
 {
     /// <summary>
     /// Interface for classes that listen to events from the Connect Interface

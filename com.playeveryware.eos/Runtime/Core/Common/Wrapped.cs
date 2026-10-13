@@ -20,7 +20,7 @@
  * SOFTWARE.
  */
 
-namespace EOSPlugin.Common
+namespace EOSUnityPlugin.Common
 {
 
     /// <summary>

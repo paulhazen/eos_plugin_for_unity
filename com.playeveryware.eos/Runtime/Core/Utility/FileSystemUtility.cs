@@ -23,7 +23,7 @@
 using System.Runtime.CompilerServices;
 
 [assembly: InternalsVisibleTo("com.playeveryware.eos-Editor")]
-namespace EOSPlugin.EpicOnlineServices.Utility
+namespace EOSUnityPlugin.EpicOnlineServices.Utility
 {
     using Common.Extensions;
     using System;

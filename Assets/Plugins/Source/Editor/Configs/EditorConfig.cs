@@ -22,7 +22,7 @@
 
 #if !EOS_DISABLE
 
-namespace EOSPlugin.EpicOnlineServices.Editor.Config
+namespace EOSUnityPlugin.EpicOnlineServices.Editor.Config
 {
     using EpicOnlineServices.Utility;
     using Config = EpicOnlineServices.Config;

@@ -26,7 +26,7 @@
 /// It should be the case that by using this class, the handle will be properly removed
 /// when the NotifyEventHandle loses reference, including in cases where an unhandled 
 /// exception occurs.
-namespace EOSPlugin.EpicOnlineServices
+namespace EOSUnityPlugin.EpicOnlineServices
 {
     public class NotifyEventHandle : GenericSafeHandle<ulong>
     {

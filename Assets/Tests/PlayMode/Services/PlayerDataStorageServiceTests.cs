@@ -20,7 +20,7 @@
  * SOFTWARE.
  */
 
-namespace EOSPlugin.EpicOnlineServices.Tests.IntegrationTests
+namespace EOSUnityPlugin.EpicOnlineServices.Tests.IntegrationTests
 {
     using NUnit.Framework;
     using System.Collections;

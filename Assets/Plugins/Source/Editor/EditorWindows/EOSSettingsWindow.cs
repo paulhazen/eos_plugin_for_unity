@@ -26,12 +26,12 @@
 
 #if !EOS_DISABLE
 
-namespace EOSPlugin.EpicOnlineServices.Editor.Windows
+namespace EOSUnityPlugin.EpicOnlineServices.Editor.Windows
 {
 #if !EOS_DISABLE
     using Epic.OnlineServices.UI;
 #endif
-    using EOSPlugin.EpicOnlineServices.Utility;
+    using EOSUnityPlugin.EpicOnlineServices.Utility;
     using System;
 	using System.Collections.Generic;
     using System.Linq;

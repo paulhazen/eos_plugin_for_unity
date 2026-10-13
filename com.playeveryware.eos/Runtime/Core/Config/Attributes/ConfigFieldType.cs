@@ -20,7 +20,7 @@
  * SOFTWARE.
  */
 
-namespace EOSPlugin.EpicOnlineServices
+namespace EOSUnityPlugin.EpicOnlineServices
 {
     /// <summary>
     /// Indicates the type of the config field. This differs from the data type

@@ -22,7 +22,7 @@
 
 #if !EOS_DISABLE
 
-namespace EOSPlugin.EpicOnlineServices.Tests.Editor
+namespace EOSUnityPlugin.EpicOnlineServices.Tests.Editor
 {
     using EpicOnlineServices.Editor;
     using EpicOnlineServices.Editor.Windows;

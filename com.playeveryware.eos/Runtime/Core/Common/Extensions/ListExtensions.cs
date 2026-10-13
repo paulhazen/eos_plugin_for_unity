@@ -20,7 +20,7 @@
  * SOFTWARE.
  */
 
-namespace EOSPlugin.Common.Extensions
+namespace EOSUnityPlugin.Common.Extensions
 {
     using System;
     using System.Collections.Generic;

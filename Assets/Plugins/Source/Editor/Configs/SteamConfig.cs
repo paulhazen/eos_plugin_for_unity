@@ -22,7 +22,7 @@
 
 #if !EOS_DISABLE
 
-namespace EOSPlugin.EpicOnlineServices
+namespace EOSUnityPlugin.EpicOnlineServices
 {
     using System;
     using System.Collections.Generic;

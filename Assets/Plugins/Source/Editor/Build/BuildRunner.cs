@@ -22,9 +22,9 @@
 
 #if !EOS_DISABLE
 
-namespace EOSPlugin.EpicOnlineServices.Editor.Build
+namespace EOSUnityPlugin.EpicOnlineServices.Editor.Build
 {
-    using EOSPlugin.EpicOnlineServices;
+    using EOSUnityPlugin.EpicOnlineServices;
     using Utility;
     using UnityEditor.Build;
     using UnityEditor.Build.Reporting;

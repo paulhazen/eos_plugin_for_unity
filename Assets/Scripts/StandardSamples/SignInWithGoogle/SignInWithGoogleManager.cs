@@ -22,7 +22,7 @@
 
 using UnityEngine;
 
-namespace EOSPlugin.EpicOnlineServices.Samples
+namespace EOSUnityPlugin.EpicOnlineServices.Samples
 {
     public class SignInWithGoogleManager : MonoBehaviour
     {

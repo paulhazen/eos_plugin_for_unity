@@ -25,7 +25,7 @@
 using System;
 using System.Collections.Generic;
 
-namespace EOSPlugin.EpicOnlineServices
+namespace EOSUnityPlugin.EpicOnlineServices
 {
     public class LogCategoryLevelPair
     {

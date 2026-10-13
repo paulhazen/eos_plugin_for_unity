@@ -21,7 +21,7 @@
  */
 
 
-namespace EOSPlugin.EpicOnlineServices.Tests
+namespace EOSUnityPlugin.EpicOnlineServices.Tests
 {
     /// <summary>
     /// Common test parameters shared between the test scene and unit/integration tests.

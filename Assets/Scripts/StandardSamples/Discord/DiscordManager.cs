@@ -24,7 +24,7 @@
 #define DISABLEDISCORD
 #endif
 
-namespace EOSPlugin.EpicOnlineServices.Samples.Discord
+namespace EOSUnityPlugin.EpicOnlineServices.Samples.Discord
 {
     using System.Collections.Generic;
     using UnityEngine;

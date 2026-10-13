@@ -21,7 +21,7 @@
 */
 
 
-namespace EOSPlugin.EpicOnlineServices.Samples.Network
+namespace EOSUnityPlugin.EpicOnlineServices.Samples.Network
 {
     using UnityEngine;
     using UnityEngine.UI;

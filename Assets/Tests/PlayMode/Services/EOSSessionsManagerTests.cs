@@ -20,7 +20,7 @@
  * SOFTWARE.
  */
 
-namespace EOSPlugin.EpicOnlineServices.Tests.Services.Sessions
+namespace EOSUnityPlugin.EpicOnlineServices.Tests.Services.Sessions
 {
     using Epic.OnlineServices;
     using Epic.OnlineServices.Sessions;

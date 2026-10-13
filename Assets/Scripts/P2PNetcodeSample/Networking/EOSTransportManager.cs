@@ -21,7 +21,7 @@
 */
 
 //#define EOS_TRANSPORTMANAGER_DEBUG
-namespace EOSPlugin.EpicOnlineServices.Samples.Network
+namespace EOSUnityPlugin.EpicOnlineServices.Samples.Network
 {
     using System;
     using System.Collections.Generic;

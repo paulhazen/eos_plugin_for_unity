@@ -22,7 +22,7 @@
 
 //#define SAMPLE_MENU_DEBUG
 
-namespace EOSPlugin.EpicOnlineServices.Samples
+namespace EOSUnityPlugin.EpicOnlineServices.Samples
 {
     using Epic.OnlineServices;
     using System.Diagnostics;

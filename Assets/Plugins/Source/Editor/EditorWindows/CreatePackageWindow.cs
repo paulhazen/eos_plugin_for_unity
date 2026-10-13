@@ -26,11 +26,11 @@ using UnityEngine;
 using UnityEditor;
 
 // make lines a little shorter
-using UPMUtility = EOSPlugin.EpicOnlineServices.Editor.Utility.UnityPackageCreationUtility;
+using UPMUtility = EOSUnityPlugin.EpicOnlineServices.Editor.Utility.UnityPackageCreationUtility;
 
 using System;
 
-namespace EOSPlugin.EpicOnlineServices.Editor.Windows
+namespace EOSUnityPlugin.EpicOnlineServices.Editor.Windows
 {
     using Config;
     using EpicOnlineServices.Utility;

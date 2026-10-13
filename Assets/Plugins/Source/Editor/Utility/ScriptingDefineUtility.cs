@@ -23,7 +23,7 @@
 using UnityEditor;
 using UnityEditor.Build.Reporting;
 
-namespace EOSPlugin.EpicOnlineServices.Editor.Utility
+namespace EOSUnityPlugin.EpicOnlineServices.Editor.Utility
 {
     using System.Linq;
 

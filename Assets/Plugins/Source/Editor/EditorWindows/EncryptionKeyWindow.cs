@@ -20,10 +20,10 @@
  * SOFTWARE.
  */
 
-namespace EOSPlugin.EpicOnlineServices.Editor.Windows
+namespace EOSUnityPlugin.EpicOnlineServices.Editor.Windows
 {
-    using EOSPlugin.EpicOnlineServices.Editor.Utility;
-    using EOSPlugin.EpicOnlineServices;
+    using EOSUnityPlugin.EpicOnlineServices.Editor.Utility;
+    using EOSUnityPlugin.EpicOnlineServices;
     using System;
     using UnityEditor;
     using UnityEngine;

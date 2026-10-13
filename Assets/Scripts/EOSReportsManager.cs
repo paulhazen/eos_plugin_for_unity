@@ -22,7 +22,7 @@
 
 
 
-namespace EOSPlugin.EpicOnlineServices.Samples
+namespace EOSUnityPlugin.EpicOnlineServices.Samples
 {
     using System;
     using System.Collections.Generic;

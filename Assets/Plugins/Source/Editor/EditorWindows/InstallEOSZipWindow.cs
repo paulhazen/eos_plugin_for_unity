@@ -29,7 +29,7 @@ using System.IO;
 using System.IO.Compression;
 using System;
 
-namespace EOSPlugin.EpicOnlineServices.Editor.Windows
+namespace EOSUnityPlugin.EpicOnlineServices.Editor.Windows
 {
     using Build;
     using EpicOnlineServices.Utility;

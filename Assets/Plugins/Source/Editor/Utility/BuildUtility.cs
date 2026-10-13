@@ -26,7 +26,7 @@
 //       Alternatively, implement it so that it behaves as expected on a Linux machine (ie running the Makefile
 //       natively.
 
-namespace EOSPlugin.EpicOnlineServices.Editor.Build
+namespace EOSUnityPlugin.EpicOnlineServices.Editor.Build
 {
     using EpicOnlineServices.Utility;
     using System;

@@ -20,7 +20,7 @@
 * SOFTWARE.
 */
 
-namespace EOSPlugin.EpicOnlineServices.Utility
+namespace EOSUnityPlugin.EpicOnlineServices.Utility
 {
     using Common.Extensions;
     using Editor.Build;

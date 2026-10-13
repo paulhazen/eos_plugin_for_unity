@@ -23,7 +23,7 @@
 using System.Runtime.CompilerServices;
 
 [assembly:InternalsVisibleTo("com.playeveryware.eos.tests.playmode")]
-namespace EOSPlugin.EpicOnlineServices.Utility
+namespace EOSUnityPlugin.EpicOnlineServices.Utility
 {
     using System;
     using System.Collections.Generic;

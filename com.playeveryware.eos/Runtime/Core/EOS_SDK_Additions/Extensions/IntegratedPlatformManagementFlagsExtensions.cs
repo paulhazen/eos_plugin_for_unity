@@ -22,7 +22,7 @@
 
 #if !EOS_DISABLE
 
-namespace EOSPlugin.EpicOnlineServices.Extensions
+namespace EOSUnityPlugin.EpicOnlineServices.Extensions
 {
     using Epic.OnlineServices.IntegratedPlatform;
     using System;

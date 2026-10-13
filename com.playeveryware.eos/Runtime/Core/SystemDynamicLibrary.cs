@@ -20,7 +20,7 @@
 * SOFTWARE.
 */
 
-namespace EOSPlugin.EpicOnlineServices
+namespace EOSUnityPlugin.EpicOnlineServices
 {
     using System.Runtime.InteropServices;
     using System.Reflection;

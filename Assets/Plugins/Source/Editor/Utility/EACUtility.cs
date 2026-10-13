@@ -22,7 +22,7 @@
 
 #if !EOS_DISABLE
 
-namespace EOSPlugin.EpicOnlineServices.Editor.Build
+namespace EOSUnityPlugin.EpicOnlineServices.Editor.Build
 {
     using Common.Extensions;
     using Config;
@@ -30,7 +30,7 @@ namespace EOSPlugin.EpicOnlineServices.Editor.Build
     using UnityEditor;
     using UnityEngine;
     using System.IO;
-    using EOSPlugin.EpicOnlineServices;
+    using EOSUnityPlugin.EpicOnlineServices;
     using System.Collections.Generic;
     using System;
     using System.Threading.Tasks;

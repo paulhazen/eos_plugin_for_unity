@@ -20,7 +20,7 @@
 * SOFTWARE.
 */
 
-namespace EOSPlugin.EpicOnlineServices.Editor
+namespace EOSUnityPlugin.EpicOnlineServices.Editor
 {
     using System;
     using System.Threading.Tasks;

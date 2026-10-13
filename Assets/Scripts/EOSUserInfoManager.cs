@@ -20,7 +20,7 @@
 * SOFTWARE.
 */
 
-namespace EOSPlugin.EpicOnlineServices.Samples
+namespace EOSUnityPlugin.EpicOnlineServices.Samples
 {
     using System.Collections.Generic;
 

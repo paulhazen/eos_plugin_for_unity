@@ -20,7 +20,7 @@
  * SOFTWARE.
 */
 
-namespace EOSPlugin.EpicOnlineServices.Utility
+namespace EOSUnityPlugin.EpicOnlineServices.Utility
 {
 #if !EXTERNAL_TO_UNITY
     using UnityEngine;

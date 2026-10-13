@@ -20,7 +20,7 @@
  * SOFTWARE.
  */
 
-namespace EOSPlugin.EpicOnlineServices.Tests.Config
+namespace EOSUnityPlugin.EpicOnlineServices.Tests.Config
 {
     using NUnit.Framework;
     using System;

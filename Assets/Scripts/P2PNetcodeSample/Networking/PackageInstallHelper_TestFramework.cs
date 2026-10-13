@@ -26,7 +26,7 @@ using UnityEditor;
 using UnityEditor.PackageManager;
 using UnityEditor.PackageManager.Requests;
 
-namespace EOSPlugin.EpicOnlineServices.Samples.TestFramework
+namespace EOSUnityPlugin.EpicOnlineServices.Samples.TestFramework
 {
     [InitializeOnLoad]
     public class PackageInstallHelper_TestFramework

@@ -20,13 +20,13 @@
  * SOFTWARE.
  */
 
-using EOSPlugin.EpicOnlineServices.Tests.Editor;
+using EOSUnityPlugin.EpicOnlineServices.Tests.Editor;
 using UnityEditor.TestTools;
 using UnityEngine.TestTools;
 
 [assembly: TestPlayerBuildModifier(typeof(TestPlayerModeSetup))]
 [assembly: PostBuildCleanup(typeof(TestPlayerModeSetup))]
-namespace EOSPlugin.EpicOnlineServices.Tests.Editor
+namespace EOSUnityPlugin.EpicOnlineServices.Tests.Editor
 {
     using System;
     using System.IO;

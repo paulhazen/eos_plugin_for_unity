@@ -20,7 +20,7 @@
 * SOFTWARE.
 */
 
-namespace EOSPlugin.EpicOnlineServices.Samples.OpenId
+namespace EOSUnityPlugin.EpicOnlineServices.Samples.OpenId
 {
     using Epic.OnlineServices;
     using Epic.OnlineServices.Connect;

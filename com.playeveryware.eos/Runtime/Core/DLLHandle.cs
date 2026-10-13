@@ -25,7 +25,7 @@
 // Uncomment the following line to enable debug printing from within DLLHandle.
 //#define ENABLE_DLLHANDLE_PRINT
 
-namespace EOSPlugin.EpicOnlineServices
+namespace EOSUnityPlugin.EpicOnlineServices
 {
     using System;
     using System.Collections.Generic;

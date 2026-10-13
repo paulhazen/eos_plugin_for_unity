@@ -8,7 +8,7 @@ using AppleAuth.Interfaces;
 using AppleAuth.Native;
 #endif
 
-namespace EOSPlugin.EpicOnlineServices.Samples.Apple
+namespace EOSUnityPlugin.EpicOnlineServices.Samples.Apple
 {
     public class EOSSignInWithAppleManager
     {

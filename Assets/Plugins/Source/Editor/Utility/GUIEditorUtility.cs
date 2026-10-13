@@ -22,7 +22,7 @@
 
 #if !EOS_DISABLE
 
-namespace EOSPlugin.EpicOnlineServices.Editor.Utility
+namespace EOSUnityPlugin.EpicOnlineServices.Editor.Utility
 {
     using Common;
 

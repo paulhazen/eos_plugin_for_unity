@@ -55,7 +55,7 @@
 #define USE_EOS_DYNAMIC_BINDINGS
 #endif
 
-namespace EOSPlugin.EpicOnlineServices
+namespace EOSUnityPlugin.EpicOnlineServices
 {
     //using Extensions;
     using Common;

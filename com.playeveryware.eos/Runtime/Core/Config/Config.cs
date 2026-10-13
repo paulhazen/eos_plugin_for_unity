@@ -34,7 +34,7 @@
 #pragma warning disable CS0649
 #endif
 
-namespace EOSPlugin.EpicOnlineServices
+namespace EOSUnityPlugin.EpicOnlineServices
 {
     using Common;
     using Newtonsoft.Json;

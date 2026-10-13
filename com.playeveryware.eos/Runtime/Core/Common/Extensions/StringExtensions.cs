@@ -20,7 +20,7 @@
  * SOFTWARE.
  */
 
-namespace EOSPlugin.Common.Extensions
+namespace EOSUnityPlugin.Common.Extensions
 {
     public static class StringExtensions
     {

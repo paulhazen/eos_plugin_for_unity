@@ -20,7 +20,7 @@
  * SOFTWARE.
  */
 
-namespace EOSPlugin.EpicOnlineServices.Tests.Auth
+namespace EOSUnityPlugin.EpicOnlineServices.Tests.Auth
 {
     using Epic.OnlineServices;
     using Epic.OnlineServices.Achievements;

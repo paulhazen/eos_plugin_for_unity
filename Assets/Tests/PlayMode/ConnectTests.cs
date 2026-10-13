@@ -20,7 +20,7 @@
  * SOFTWARE.
  */
 
-namespace EOSPlugin.EpicOnlineServices.Tests.Connect
+namespace EOSUnityPlugin.EpicOnlineServices.Tests.Connect
 {
     using Epic.OnlineServices;
     using Epic.OnlineServices.Achievements;

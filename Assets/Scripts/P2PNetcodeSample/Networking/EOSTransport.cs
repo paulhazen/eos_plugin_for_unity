@@ -25,7 +25,7 @@
 #if COM_UNITY_MODULE_NETCODE
 
 //namespace Netcode.Transports.EOSP2P
-namespace EOSPlugin.EpicOnlineServices.Samples.Network
+namespace EOSUnityPlugin.EpicOnlineServices.Samples.Network
 {
     using System;
     using UnityEngine;

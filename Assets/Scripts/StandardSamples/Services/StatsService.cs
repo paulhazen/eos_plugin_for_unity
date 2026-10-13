@@ -23,7 +23,7 @@
 
 //#define ENABLE_DEBUG_STATS_SERVICE
 
-namespace EOSPlugin.EpicOnlineServices
+namespace EOSUnityPlugin.EpicOnlineServices
 {
     using System;
     using System.Collections.Generic;

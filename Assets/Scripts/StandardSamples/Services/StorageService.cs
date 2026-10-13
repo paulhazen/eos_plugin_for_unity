@@ -21,7 +21,7 @@
  *
  */
 
-namespace EOSPlugin.EpicOnlineServices
+namespace EOSUnityPlugin.EpicOnlineServices
 {
     using Samples;
     using System;

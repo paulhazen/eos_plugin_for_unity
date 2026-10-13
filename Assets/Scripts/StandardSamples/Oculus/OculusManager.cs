@@ -28,7 +28,7 @@
     using OculusWrapper = Oculus; // Don't forget to import Oculus.unitypackage from Legacy Oculus SDK
 #endif
 
-namespace EOSPlugin.EpicOnlineServices.Samples.Oculus
+namespace EOSUnityPlugin.EpicOnlineServices.Samples.Oculus
 {
     using System.Collections.Generic;
     using UnityEngine;

@@ -30,7 +30,7 @@ using System.IO;
 using System.Linq;
 using UnityEditor.Build;
 
-namespace EOSPlugin.EpicOnlineServices.Editor.Utility
+namespace EOSUnityPlugin.EpicOnlineServices.Editor.Utility
 {
     using Build;
     using Config;

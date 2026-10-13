@@ -24,7 +24,7 @@ using System.IO;
 using UnityEngine;
 using UnityEditor;
 
-namespace EOSPlugin.EpicOnlineServices.Editor.Utility
+namespace EOSUnityPlugin.EpicOnlineServices.Editor.Utility
 {
     public static class CreateXMLLinkUtility
     {

@@ -23,7 +23,7 @@
 // Uncomment this define, or define it in build symbols, to get non-error debugging messages from this Manager
 // #define ENABLE_DEBUG_SESSIONS_MANAGER
 
-namespace EOSPlugin.EpicOnlineServices.Samples
+namespace EOSUnityPlugin.EpicOnlineServices.Samples
 {
     using System;
     using System.Collections.Generic;

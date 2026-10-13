@@ -26,7 +26,7 @@ using System.Text;
 using UnityEditor;
 using UnityEngine;
 
-namespace EOSPlugin.EpicOnlineServices.Editor.Windows
+namespace EOSUnityPlugin.EpicOnlineServices.Editor.Windows
 {
     using EpicOnlineServices.Utility;
 

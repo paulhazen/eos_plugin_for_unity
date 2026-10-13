@@ -25,7 +25,7 @@
 using UnityEngine.Scripting;
 [assembly: AlwaysLinkAssembly]
 #endif
-namespace EOSPlugin.EpicOnlineServices
+namespace EOSUnityPlugin.EpicOnlineServices
 {
     using System;
     using System.Collections.Generic;

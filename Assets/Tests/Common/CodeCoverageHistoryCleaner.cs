@@ -21,7 +21,7 @@
  */
 
 
-namespace EOSPlugin.EpicOnlineServices.Tests
+namespace EOSUnityPlugin.EpicOnlineServices.Tests
 {
     using System.Collections.Generic;
     using System.IO;

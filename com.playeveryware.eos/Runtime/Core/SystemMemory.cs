@@ -32,7 +32,7 @@
 #define DYNAMIC_MEMORY_ALLOCATION_AVAILABLE
 #endif
 
-namespace EOSPlugin.EpicOnlineServices
+namespace EOSUnityPlugin.EpicOnlineServices
 {
     using System.Runtime.InteropServices;
     using System.Reflection;

@@ -25,7 +25,7 @@ using System.IO;
 using UnityEditor;
 using UnityEngine;
 
-namespace EOSPlugin.EpicOnlineServices.Editor.Windows
+namespace EOSUnityPlugin.EpicOnlineServices.Editor.Windows
 {
     using EpicOnlineServices.Utility;
     using JsonUtility = EpicOnlineServices.Utility.JsonUtility;

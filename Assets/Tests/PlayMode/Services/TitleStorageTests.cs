@@ -20,7 +20,7 @@
  * SOFTWARE.
  */
 
-namespace EOSPlugin.EpicOnlineServices.Tests.Services.TitleStorage
+namespace EOSUnityPlugin.EpicOnlineServices.Tests.Services.TitleStorage
 {
     using Epic.OnlineServices;
     using Epic.OnlineServices.TitleStorage;

@@ -26,7 +26,7 @@ using UnityEditor;
 using UnityEditor.PackageManager;
 using UnityEditor.PackageManager.Requests;
 
-namespace EOSPlugin.EpicOnlineServices.Samples.Network
+namespace EOSUnityPlugin.EpicOnlineServices.Samples.Network
 {
     [InitializeOnLoad]
     public class PackageInstallHelper_PostProcessing

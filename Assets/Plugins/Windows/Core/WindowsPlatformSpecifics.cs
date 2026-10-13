@@ -39,7 +39,7 @@
 // If standalone windows and not editor, or the windows editor.
 #if (UNITY_STANDALONE_WIN && !UNITY_EDITOR) || UNITY_EDITOR_WIN || EXTERNAL_TO_UNITY
 
-namespace EOSPlugin.EpicOnlineServices
+namespace EOSUnityPlugin.EpicOnlineServices
 {
     using System.Collections.Generic;
 

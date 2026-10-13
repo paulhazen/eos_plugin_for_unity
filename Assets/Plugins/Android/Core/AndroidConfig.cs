@@ -22,7 +22,7 @@
 
 #if !EOS_DISABLE
 
-namespace EOSPlugin.EpicOnlineServices
+namespace EOSUnityPlugin.EpicOnlineServices
 {
     // Flags specifically for Android. Note that labels for the baser
     // PlatformConfig need to be specified here.

@@ -20,7 +20,7 @@
  * SOFTWARE.
  */
 
-namespace EOSPlugin.EpicOnlineServices.Tests.Services.Lobby
+namespace EOSUnityPlugin.EpicOnlineServices.Tests.Services.Lobby
 {
     using Tests;
     using Epic.OnlineServices;

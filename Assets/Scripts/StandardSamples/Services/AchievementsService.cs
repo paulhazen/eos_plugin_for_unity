@@ -22,7 +22,7 @@
 
 //#define ENABLE_DEBUG_ACHIEVEMENTS_SERVICE
 
-namespace EOSPlugin.EpicOnlineServices.Samples
+namespace EOSUnityPlugin.EpicOnlineServices.Samples
 {
     using System;
     using System.Diagnostics;

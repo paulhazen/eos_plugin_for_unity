@@ -20,7 +20,7 @@
  * SOFTWARE.
  */
 
-namespace EOSPlugin.EpicOnlineServices
+namespace EOSUnityPlugin.EpicOnlineServices
 {
     // This compile conditional is here so that when EOS is disabled, nothing is
     // referenced in the Epic namespace.

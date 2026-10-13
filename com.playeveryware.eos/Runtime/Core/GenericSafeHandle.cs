@@ -23,7 +23,7 @@
 using System.Runtime.ConstrainedExecution;
 using System;
 
-namespace EOSPlugin.EpicOnlineServices
+namespace EOSUnityPlugin.EpicOnlineServices
 {
     //-------------------------------------------------------------------------
     /// <summary>

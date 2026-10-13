@@ -40,7 +40,7 @@ using Epic.OnlineServices.Platform;
 using Epic.OnlineServices;
 #endif
 
-namespace EOSPlugin.EpicOnlineServices
+namespace EOSUnityPlugin.EpicOnlineServices
 {
     public partial class EOSManager
     {

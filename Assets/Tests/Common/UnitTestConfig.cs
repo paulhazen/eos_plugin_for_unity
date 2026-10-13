@@ -22,7 +22,7 @@
 
 #if !EOS_DISABLE
 
-namespace EOSPlugin.EpicOnlineServices.Tests
+namespace EOSUnityPlugin.EpicOnlineServices.Tests
 {
     using Utility;
     using System;
